@@ -1,0 +1,16 @@
+# Netlify Redirects for Clean URLs (Revotic AI)
+
+# Main Pages
+/                /index.html               200
+/services        /services/index.html      200
+/portfolio       /portfolio/index.html     200
+/experts         /experts/index.html       200
+/blogs           /blogs/index.html         200
+/contact         /contact/index.html       200
+/about           /about/index.html         200
+/careers         /careers/index.html       200
+
+# Legal Pages
+/privacy-policy  /privacy-policy/index.html  200
+/cookies-policy  /cookies-policy/index.html  200
+/terms-and-conditions  /terms-and-conditions/index.html  200

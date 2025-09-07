@@ -1,0 +1,38 @@
+# robots.txt for Revotic AI
+# This file controls how search engines crawl and index your website
+
+User-agent: *
+
+# Allow Google to index everything by default
+
+Allow: /
+User-agent: *
+# Allow essential pages
+Allow: /$
+Allow: /services
+Allow: /portfolio
+Allow: /our-experts
+Allow: /blogs
+Allow: /contact
+Allow: /about
+
+# Explicitly ALLOW important brand images
+Allow: /assets/img/logo.png
+Allow: /assets/images/Expert/sayab.png
+
+# Block other image folders to avoid unnecessary indexing
+Disallow: /assets/img%20copy/
+Disallow: /agntix/assets/img/
+
+# Block internal/private directories
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+
+# Block raw JS/CSS files (not needed for indexing)
+Disallow: /assets/js/
+Disallow: /assets/css/
+
+# Add sitemap for better indexing
+Sitemap: https://revoticai.com/sitemap.xml

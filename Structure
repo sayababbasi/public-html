@@ -1,0 +1,60 @@
+
+revotic-ai-website/
+│
+├── index.html                 # Homepage (Landing Page)
+│
+├── services/
+│   ├── index.html              # All services overview
+│   ├── ai-ml.html              # AI & Machine Learning
+│   ├── web-app.html            # Web & App Development
+│   ├── automation.html         # Automation Solutions
+│   ├── game-dev.html           # Game Development
+│   └── ui-ux.html              # UI/UX Design
+│
+├── products/
+│   ├── index.html              # All products overview
+│   └── product-slug.html       # Template for dynamic product details
+│
+├── case-studies/
+│   ├── index.html              # All case studies
+│   └── case-study-slug.html    # Dynamic case study page
+│
+├── blog/
+│   ├── index.html              # Blog landing
+│   └── blog-post-slug.html     # Blog post template
+│
+├── careers/
+│   └── index.html              # Job listings & application form
+│
+├── contact/
+│   └── index.html              # Contact form & Book a Demo
+│
+├── assets/
+│   ├── css/
+│   │   ├── style.css           # Main styles
+│   │   ├── responsive.css      # Mobile-first styles
+│   │   └── animations.css      # Preloader & transition effects
+│   │
+│   ├── js/
+│   │   ├── main.js             # Navigation, smooth scroll, interactivity
+│   │   ├── form.js             # Contact/Lead form validation
+│   │   └── analytics.js        # Tracking & CRM integration
+│   │
+│   ├── images/                 # All optimized images
+│   │   ├── hero.webp
+│   │   ├── logo.png
+│   │   └── case-study1.webp
+│   │
+│   └── fonts/                  # Custom web fonts
+│
+├── components/                 # Reusable HTML snippets
+│   ├── header.html              # Navbar
+│   ├── footer.html              # Footer
+│   ├── cta.html                 # Call-to-action sections
+│   ├── preloader.html           # Page preloader animation
+│   └── lead-form.html           # Lead capture form
+│
+├── sitemap.xml                  # For SEO
+├── robots.txt                   # For search engine crawling
+├── README.md                    # Documentation
+└── LICENSE                      # License file (optional)

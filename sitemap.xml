@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://revoticai.com/</loc>
+    <lastmod>2025-09-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Core Pages -->
+  <url>
+    <loc>https://revoticai.com/services</loc>
+    <lastmod>2025-09-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://revoticai.com/portfolio</loc>
+    <lastmod>2025-09-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://revoticai.com/experts</loc>
+    <lastmod>2025-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://revoticai.com/contact</loc>
+    <lastmod>2025-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://revoticai.com/about</loc>
+    <lastmod>2025-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://revoticai.com/careers/</loc>
+    <lastmod>2025-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Legal Pages -->
+  <url>
+    <loc>https://revoticai.com/cookies-policy</loc>
+    <lastmod>2025-09-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://revoticai.com/privacy-policy</loc>
+    <lastmod>2025-09-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://revoticai.com/terms-and-conditions</loc>
+    <lastmod>2025-09-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Blog Index -->
+  <url>
+    <loc>https://revoticai.com/blogs</loc>
+    <lastmod>2025-09-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Individual Blog Posts -->
+  <url><loc>https://revoticai.com/blogs/ai-dashboards-data-visualization</loc><lastmod>2025-09-07</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://revoticai.com/blogs/ai-ml-automation</loc><lastmod>2025-09-07</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://revoticai.com/blogs/blog-page-2</loc><lastmod>2025-09-07</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://revoticai.com/blogs/blog-post</loc><lastmod>2025-09-07</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://revoticai.com/blogs/future-of-ai-in-healthcare-2025</loc><lastmod>2025-09-07</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://revoticai.com/blogs/machine-learning-algorithms</loc><lastmod>2025-09-07</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://revoticai.com/blogs/revotic-ai-detailed</loc><lastmod>2025-09-07</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://revoticai.com/blogs/revotic-ai-services</loc><lastmod>2025-09-07</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://revoticai.com/blogs/revotic-ai-transforming-businesses</loc><lastmod>2025-09-07</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://revoticai.com/blogs/role-of-big-data-in-business-decision-making</loc><lastmod>2025-09-07</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://revoticai.com/blogs/smarter-business-growth-with-revotic-ai</loc><lastmod>2025-09-07</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://revoticai.com/blogs/web-app-saas-development</loc><lastmod>2025-09-07</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://revoticai.com/blogs/welcome-to-revotic-ai</loc><lastmod>2025-09-07</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+
+</urlset>

@@ -1,0 +1,75 @@
+/* Hero Area Padding & Positioning */
+.tp-contact-us-ptb {
+  position: relative;
+  padding: 100px 0;
+  background-color: #fff; /* or your background */
+}
+
+/* Top Subtitle "BRAND" */
+.tp-section-subtitle {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #000;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+}
+
+/* Arrow Icon Next to Subtitle */
+.ar-about-us-4-icon svg {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Section Title: "Our Sponsors" */
+.tp-career-title {
+  font-size: 64px;
+  font-weight: 800;
+  color: #000;
+  line-height: 1.2;
+  margin: 0;
+}
+
+/* Description Text (Right side paragraph) */
+.tp-faq-text p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* The Decorative SVG Curve on the Top Right */
+.tp-career-shape-1 {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  z-index: 1;
+}
+
+.tp-career-shape-1 svg {
+  height: auto;
+  max-width: 120px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .tp-career-title {
+    font-size: 42px;
+  }
+  .tp-faq-text p {
+    font-size: 16px;
+  }
+  .tp-career-shape-1 {
+    top: 10px;
+    right: 10px;
+    max-width: 80px;
+  }
+}
+.ar-about-us-4-icon svg {
+  transition: transform 0.3s ease-in-out;
+}
+
+.ar-about-us-4-icon:hover svg {
+  transform: translateX(5px);
+}

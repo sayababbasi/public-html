@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100% !important;
+    z-index: 999999 !important;
+    padding: 0 10px;
+    position: relative;
+}
+
+.tp-header-area {
+    width: 100% !important;
+    padding: 15px 0;
+}
+
+.tp-header-area .container-fluid {
+    width: 100% !important;
+    padding: 0 0px;
+    min-width: 100% !important;
+}
+
+.tp-header-box .row {
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    flex-wrap: nowrap;
+}
+
+.tp-header-logo img {
+    max-height: 70px;
+}
+
+
+nav ul {
+    list-style: none !important;
+    display: flex !important;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-decoration: none !important;
+    color: #2e2e2e !important;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.tp-btn-yellow {
+    background: #f8e71c;
+    padding: 10px 15px !important;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px !important;
+    text-decoration: none;
+    color: #000;
+}
+
+.tp-btn-yellow span {
+    display: block !important;
+    line-height: 1.2;
+}
+
+.hamburger {
+    display: none !important;
+    font-size: 26px !important;
+    cursor: pointer;
+    color: #000;
+}
+
+/* MOBILE MENU OVERLAY */
+.overlay {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 1500;
+}
+
+.overlay.active {
+    display: block;
+}
+
+.mobile-menu {
+    position: fixed !important;
+    top: 0;
+    right: -100% !important;
+    width: 85% !important;
+    max-width: 360px !important;
+    height: 100% !important;
+    background: #fff;
+    box-shadow: -3px 0 10px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease-in-out;
+    z-index: 2000;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.mobile-menu.active {
+    right: 0 !important;
+}
+
+.mobile-menu .menu-header {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+
+.mobile-menu .menu-header img {
+    max-height: 60px;
+}
+
+.mobile-menu .close-menu {
+    font-size: 32px !important;
+    cursor: pointer;
+}
+
+.mobile-menu ul {
+    margin-top: 30px !important;
+    list-style: none;
+    padding: 0;
+}
+
+.mobile-menu ul li {
+    margin: 15px 0 !important;
+}
+
+.mobile-menu ul li a {
+    text-decoration: none !important;
+    font-size: 16px !important;
+    color: #000;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.mobile-menu ul li a:hover {
+    color: #f39c12 !important;
+}
+
+.mobile-menu .info {
+    margin-top: 30px !important;
+    font-size: 14px !important;
+    color: #444;
+}
+
+.mobile-menu .info strong {
+    display: block !important;
+    margin: 15px 0 5px;
+    font-weight: 600;
+}
+
+.social-icons {
+    display: flex !important;
+    gap: 15px !important;
+    margin-top: 15px;
+}
+
+.social-icons a {
+    color: #000;
+    font-size: 18px !important;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #f39c12 !important;
+}
+
+/* RESPONSIVE */
+@media (max-width: 991px) {
+    nav {
+        display: none !important;
+    }
+
+    .cta-btn {
+        display: none !important;
+    }
+
+    .hamburger {
+        display: block !important;
+        text-align: right !important;
+        font-size: 22px;
+    }
+
+    .tp-header-logo img {
+        max-width: 140px !important;
+        height: auto;
+    }
+
+    .mobile-menu .menu-header img {
+        max-height: 60px !important;
+    }
+}
+
+@media (max-width: 450px) {
+    .hamburger {
+        font-size: 20px !important;
+
+    }
+
+    .tp-header-logo img {
+        max-width: 140px;
+        height: auto;
+    }
+    .mobile-menu .menu-header img {
+    max-height: 60px !important;
+}
+}
+
+@media (max-width: 300px) {
+    .hamburger {
+        font-size: 17px;
+
+    }
+
+    .tp-header-logo {
+
+        margin-left: 0 !important;
+        padding-left: 0 !important;
+
+    }
+
+    .tp-header-logo img {
+        max-width: 100px !important;
+        height: auto;
+    }
+}
+
+@media (max-width: 200px) {
+    .hamburger {
+        font-size: 12px !important;
+
+    }
+
+    .tp-header-logo {
+
+        margin-left: 0 !important;
+        padding-left: 0 !important;
+
+    }
+
+    .tp-header-logo img {
+        max-width: 60px !important;
+        height: auto;
+    }
+}

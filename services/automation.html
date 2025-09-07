@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Business Automation - Revotic AI</title>
+
+
+  <style>
+    /* Reuse previous variables */
+    :root {
+      --accent: #7c5cff;
+      --accent2: #00e0ff;
+      --bg-dark: #d3b5b5;
+      --card-bg: rgba(202, 202, 202, 0.85);
+      --text-light: #e6edf3;
+      --muted: #9aa4b2;
+      --radius: 16px;
+      --border: rgba(124, 92, 255, 0.6);
+    }
+
+    /* Glow animation for title */
+    @keyframes glow {
+      0% {
+        text-shadow: 0 0 8px var(--accent);
+      }
+
+      100% {
+        text-shadow: 0 0 18px var(--accent2);
+      }
+    }
+
+    /* Cards style */
+    #automation .card {
+      background: var(--card-bg);
+      padding: 25px;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      box-shadow: 0 0 15px rgba(124, 92, 255, 0.3);
+      transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+      animation: cardGlow 3s infinite alternate;
+    }
+
+    #automation .card:hover {
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 0 25px rgba(124, 92, 255, 0.6), 0 12px 25px rgba(124, 92, 255, 0.4);
+      border-color: rgba(124, 92, 255, 0.9);
+    }
+
+    #automation .card h3 {
+      color: var(--accent2);
+      margin-bottom: 10px;
+    }
+
+    #automation .card p {
+      color: var(--muted);
+    }
+
+    /* Card Glow Keyframes */
+    @keyframes cardGlow {
+      0% {
+        box-shadow: 0 0 10px rgba(124, 92, 255, 0.2);
+      }
+
+      50% {
+        box-shadow: 0 0 20px rgba(124, 92, 255, 0.5);
+      }
+
+      100% {
+        box-shadow: 0 0 10px rgba(124, 92, 255, 0.2);
+      }
+    }
+  </style>
+
+  <!-- Font Awsome -->
+    <link rel="stylesheet"   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>   
+
+   </head>
+
+
+<body>
+  <!-- ================= AUTOMATION SECTION ================= -->
+  <section id="automation"
+    style="position:relative; overflow:hidden; background:#e0e0e0; color:#e6edf3; padding:80px 20px;">
+    <!-- Particles Background -->
+    <div id="particles-automation" class="d-flex " ></div>
+
+    <div>
+      <h2>
+        Automation Solutions
+      </h2>
+      <p>
+        We develop intelligent automation systems that streamline workflows, reduce manual effort, and improve
+        efficiency.
+      </p>
+
+      <!-- Card Grid -->
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:25px; margin-top:50px;">
+        <div class="card">
+          <h3>Process Automation</h3>
+          <p>Automating repetitive tasks to save time and resources.</p>
+        </div>
+        <div class="card">
+          <h3>AI Workflows</h3>
+          <p>Intelligent workflows powered by machine learning.</p>
+        </div>
+        <div class="card">
+          <h3>Robotic Process Automation</h3>
+          <p>Software robots handling routine business processes.</p>
+        </div>
+        <div class="card">
+          <h3>Data Integration</h3>
+          <p>Seamless integration between systems and applications.</p>
+        </div>
+        <div class="card">
+          <h3>Monitoring Systems</h3>
+          <p>Real-time monitoring and alerts for automated processes.</p>
+        </div>
+        <div class="card">
+          <h3>Task Scheduling</h3>
+          <p>Efficient scheduling of automated tasks for accuracy.</p>
+        </div>
+        <div class="card">
+          <h3>Document Automation</h3>
+          <p>Automatic document processing and management.</p>
+        </div>
+        <div class="card">
+          <h3>Workflow Optimization</h3>
+          <p>Improving efficiency through intelligent process design.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- Particles JS -->
+  <script>
+    particlesJS("particles-automation", {
+      particles: {
+        number: { value: 80, density: { enable: true, value_area: 800 } },
+        color: { value: "#ffffff" },
+        shape: { type: "circle" },
+        opacity: { value: 0.5 },
+        size: { value: 3 },
+        line_linked: { enable: true, distance: 150, color: "#ffffff", opacity: 0.4, width: 1 },
+        move: { enable: true, speed: 2 }
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: { onhover: { enable: true, mode: "repulse" }, onclick: { enable: true, mode: "push" } },
+        modes: { repulse: { distance: 100 }, push: { particles_nb: 4 } }
+      }
+    });
+  </script>
+
+</body>
+
+</html>

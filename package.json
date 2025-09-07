@@ -1,0 +1,15 @@
+{
+  "name": "revoticai",
+  "version": "1.0.0",
+  "description": "Revotic AI Pvt Ltd. is an innovative AI & technology company specializing in:\r - **Artificial Intelligence & Machine Learning**\r - **AI Automation Solutions**\r - **AI SaaS Products**\r - **AI-Powered Dashboards**\r - **Full-Stack Web & App Development**",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemailer": "^7.0.5"
+  }
+}

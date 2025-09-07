@@ -1,0 +1,210 @@
+<section id="game-dev" style="scroll-margin-top:80px;">
+  <style>
+    :root {
+      --accent: #7c5cff;
+      --accent2: #00e0ff;
+      --bg-dark: #0b0f14;
+      --card-bg: rgba(15, 22, 32, 0.85);
+      --text-light: #e6edf3;
+      --muted: #9aa4b2;
+    }
+
+    /* Background & particles */
+    #game-dev {
+      position: relative;
+      background: radial-gradient(circle at center, #111827 0%, var(--bg-dark) 100%);
+      padding: 100px 20px;
+      overflow: hidden;
+      color: var(--text-light);
+    }
+
+    #game-dev .particles {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: 0;
+    }
+
+    #game-dev .particles span {
+      position: absolute;
+      display: block;
+      width: 6px; height: 6px;
+      background: var(--accent2);
+      border-radius: 50%;
+      animation: float 6s infinite ease-in-out;
+      opacity: 0.7;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0) scale(1); opacity: 0.5; }
+      50% { transform: translateY(-60px) scale(1.3); opacity: 1; }
+      100% { transform: translateY(0) scale(1); opacity: 0.5; }
+    }
+
+    /* Content */
+    #game-dev .content {
+      position: relative;
+      z-index: 2;
+      max-width: 1200px;
+      margin: auto;
+      text-align: center;
+    }
+
+    #game-dev h2 {
+      font-size: 3rem;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+      animation: glow 3s infinite alternate;
+      margin-bottom: 15px;
+    }
+
+    @keyframes glow {
+      0% { text-shadow: 0 0 8px var(--accent); }
+      100% { text-shadow: 0 0 18px var(--accent2); }
+    }
+
+    #game-dev p {
+      max-width: 700px;
+      margin: auto;
+      color: var(--muted);
+      font-size: 1.1rem;
+      margin-bottom: 50px;
+    }
+
+    /* Card Grid */
+    #game-dev .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    /* Cards */
+    #game-dev .card {
+      background: var(--card-bg);
+      padding: 25px;
+      border-radius: 16px;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      border: 1px solid rgba(255,255,255,0.08);
+      animation: fadeUp 0.8s ease both;
+    }
+
+    #game-dev .card:hover {
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 12px 25px rgba(124, 92, 255, 0.3);
+    }
+
+    @keyframes fadeUp {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Card Icons */
+    #game-dev .icon {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: var(--accent2);
+    }
+
+    /* Widget inside cards */
+    #game-dev .progress-bar {
+      background: rgba(255,255,255,0.05);
+      height: 8px;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-top: 15px;
+    }
+
+    #game-dev .progress {
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      animation: progressAnim 3s infinite alternate ease-in-out;
+    }
+
+    @keyframes progressAnim {
+      0% { width: 40%; }
+      100% { width: 90%; }
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      #game-dev h2 { font-size: 2.2rem; }
+    }
+  </style>
+
+  <div class="particles">
+    <span style="left:10%; animation-delay:0s;"></span>
+    <span style="left:30%; animation-delay:1s;"></span>
+    <span style="left:50%; animation-delay:2s;"></span>
+    <span style="left:70%; animation-delay:3s;"></span>
+    <span style="left:90%; animation-delay:4s;"></span>
+  </div>
+
+  <div class="content">
+    <h2>Game Development at RevoticAI</h2>
+    <p>We combine creativity and cutting-edge AI to craft engaging, immersive, and scalable gaming experiences tailored for modern audiences.</p>
+
+    <div class="grid">
+      <div class="card">
+        <div class="icon">🎮</div>
+        <h3>AI NPC Systems</h3>
+        <p>Intelligent non-playable characters that adapt to player behavior in real-time.</p>
+        <div class="progress-bar"><div class="progress"></div></div>
+      </div>
+
+      <div class="card">
+        <div class="icon">🌐</div>
+        <h3>Multiplayer Framework</h3>
+        <p>Seamless global multiplayer experiences with low-latency networking.</p>
+        <div class="progress-bar"><div class="progress"></div></div>
+      </div>
+
+      <div class="card">
+        <div class="icon">⚡</div>
+        <h3>Performance Optimization</h3>
+        <p>Ensuring smooth frame rates across platforms with advanced profiling.</p>
+        <div class="progress-bar"><div class="progress"></div></div>
+      </div>
+
+      <div class="card">
+        <div class="icon">🎨</div>
+        <h3>Procedural Worlds</h3>
+        <p>Endless, algorithmically generated worlds with unique biomes.</p>
+        <div class="progress-bar"><div class="progress"></div></div>
+      </div>
+
+      <div class="card">
+        <div class="icon">🤖</div>
+        <h3>AI Animation Blending</h3>
+        <p>Smooth and dynamic animation transitions driven by AI.</p>
+        <div class="progress-bar"><div class="progress"></div></div>
+      </div>
+
+      <div class="card">
+        <div class="icon">🔊</div>
+        <h3>Adaptive Soundscapes</h3>
+        <p>Dynamic soundtracks that respond to gameplay intensity.</p>
+        <div class="progress-bar"><div class="progress"></div></div>
+      </div>
+
+      <div class="card">
+        <div class="icon">🧩</div>
+        <h3>Modular Game Engines</h3>
+        <p>Customizable, modular engines for rapid game prototyping.</p>
+        <div class="progress-bar"><div class="progress"></div></div>
+      </div>
+
+      <div class="card">
+        <div class="icon">📊</div>
+        <h3>Player Analytics</h3>
+        <p>In-depth behavioral analytics to improve engagement.</p>
+        <div class="progress-bar"><div class="progress"></div></div>
+      </div>
+    </div>
+  </div>
+</section>

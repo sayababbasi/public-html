@@ -1,0 +1,1565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Experts - Revotic AI | AI & ML Specialists, Automation Engineers</title>
+
+    <meta name="description"
+        content="Meet the experts behind Revotic AI: AI & ML specialists, automation engineers, SaaS developers, and full-stack web professionals delivering innovative technology solutions.">
+
+    <meta name="keywords"
+        content="Revotic AI experts, AI engineers, ML developers, automation specialists, SaaS experts, AI team, machine learning professionals, AI developers, web development experts">
+
+    <!-- Open Graph for social sharing -->
+    <meta property="og:title" content="Our Experts - Revotic AI">
+    <meta property="og:description"
+        content="Meet the AI & ML specialists, automation engineers, and full-stack developers at Revotic AI.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://revoticai.com/our-experts">
+    <meta property="og:image" content="https://revoticai.com/assets/img/revoticai-experts.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Our Experts - Revotic AI">
+    <meta name="twitter:description"
+        content="AI & ML specialists, automation engineers, SaaS developers, and web experts at Revotic AI.">
+    <meta name="twitter:image" content="https://revoticai.com/assets/img/revoticai-experts.jpg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://revoticai.com/our-experts">
+
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" type="image/png" href="/assets/images/favicon-black.png">
+    <link rel="icon" type="image/png" href="/public/favicon-black.png">
+
+    <style>
+        .ft-top .footer-pd {
+            padding: 60px 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+            color: #333;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 100px 20px 60px;
+            background: linear-gradient(to right, #1b1919, #021024);
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: auto;
+            opacity: 0.9;
+        }
+
+        /* Team Section */
+        .team-section {
+            padding: 80px 20px;
+            max-width: 1300px;
+            margin: auto;
+        }
+
+        .team-section h2 {
+            text-align: center;
+            font-size: 2.6rem;
+            margin-bottom: 15px;
+            color: #111;
+        }
+
+        .team-section p {
+            text-align: center;
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 60px;
+        }
+
+        .team-grid {
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 50px;
+            justify-items: center;
+            border: 0;
+        }
+
+        .card {
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-12px);
+        }
+
+        .avatar {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 8px solid #fff;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+            /* margin-bottom: 5px; */
+        }
+
+        .name {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #111;
+            margin: 10px 0 0 0;
+        }
+
+        .role {
+            font-size: 1.1rem;
+            color: #666;
+            margin: 0 0 5px 0;
+        }
+
+
+        /* Values Section */
+        .values {
+            background: #fff;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .values h2 {
+            font-size: 2.4rem;
+            margin-bottom: 40px;
+            color: #111;
+        }
+
+        .value-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 40px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .value-box {
+            background: #f9fafb;
+            border-radius: 18px;
+            padding: 30px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+
+        .value-box:hover {
+            transform: translateY(-8px);
+        }
+
+        .value-box h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: #0077ff;
+        }
+
+        .value-box p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        /* Call To Action */
+        .cta {
+            background: #0f172a;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .cta h2 {
+            font-size: 2.6rem;
+            margin-bottom: 20px;
+        }
+
+        .cta p {
+            max-width: 700px;
+            margin: auto;
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+
+        .cta button {
+            padding: 15px 35px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 30px;
+            background: #0077ff;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+
+
+        .dark-color {
+            color: #3b3b3b !important;
+        }
+
+        .dark-color-p {
+            color: #272727 !important;
+        }
+
+        .body-ff {
+            margin-bottom: 30px;
+        }
+
+        .experts {
+            background: #fff9f9;
+            padding: 50px 0;
+        }
+
+        .revotic-expert .container-1330 {
+            max-width: 1330px;
+            /* margin: 0 ; */
+            padding: 0 15px;
+            /* background: #000; */
+        }
+
+        .revotic-expert .expert-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .revotic-expert .expert-card {
+            /* background: #fccccc; */
+            border-radius: 12px;
+            padding: 10px;
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            /* 🔥 Add pointer on hover */
+        }
+
+        .revotic-expert .img {
+            width: 350px;
+            height: 350px;
+            margin: 0 auto 10px;
+            overflow: hidden;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            background: #fff;
+            position: relative;
+        }
+
+        .revotic-expert .img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            filter: grayscale(100%);
+            /* 🔲 Make image black & white by default */
+            transition: filter 0.3s ease-in-out;
+        }
+
+        .revotic-expert .expert-card:hover .img img {
+            filter: grayscale(0%);
+            /* 🎨 Show color on hover */
+        }
+
+        /* ✨ SVG overlays on hover */
+        .revotic-expert .svg-effect {
+            position: absolute;
+            width: 120px;
+            height: 100px;
+            pointer-events: none;
+            opacity: 0;
+        }
+
+        .revotic-expert .svg-top {
+            top: 0;
+            right: 0;
+            transform: translateX(100%) translateY(-100%);
+        }
+
+        .revotic-expert .svg-bottom {
+            bottom: 0;
+            left: 0;
+            transform: translateX(-100%) translateY(100%);
+        }
+
+        .revotic-expert .expert-card:hover .svg-effect {
+            animation: fly-in 0.6s forwards;
+            opacity: 1;
+        }
+
+        @keyframes fly-in {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                transform: translate(0, 0);
+                opacity: 1;
+            }
+        }
+
+        .revotic-expert .expert-name {
+            font-size: 18px;
+            font-weight: 800;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .revotic-expert .expert-rol {
+            font-size: 14px;
+            color: #ff821c;
+        }
+
+        .revotic-expert .expert-heading {
+            margin-bottom: 50px;
+        }
+
+        .revotic-expert .dots-svg,
+        .revotic-expert .accent-circle {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            z-index: 1;
+        }
+
+        /* Positioning */
+        .revotic-expert .dots-svg.top-right {
+            top: -10px;
+            right: -10px;
+        }
+
+        .revotic-expert .dots-svg.bottom-left {
+            bottom: -10px;
+            left: -10px;
+        }
+
+        .revotic-expert .accent-circle.bottom-right {
+            bottom: -20px;
+            right: -20px;
+            width: 80px;
+            height: 80px;
+        }
+
+        @media (max-width: 768px) {
+            .revotic-expert .row {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        .top-margin {
+            padding-top: 100px;
+        }
+
+        .padding-inner {
+            padding: 20px;
+        }
+
+        .expert-heading-color {
+            color: #333 !important;
+        }
+
+        .expert-p-color {
+            color: #272727 !important;
+        }
+
+        .service-gap-padding {
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+
+        .it-feature-area {
+            padding-bottom: 100px;
+        }
+
+
+        /* SVG overlays as images */
+        .expert-card .img img.overlay {
+            position: absolute;
+            pointer-events: none;
+            z-index: 2;
+            transition: opacity 0.5s ease;
+            opacity: 0;
+        }
+
+        /* Show overlays on hover */
+        .expert-card:hover .img img.overlay {
+            opacity: 1;
+        }
+
+        /* Position the SVG overlays */
+        .expert-card .img img.dots-svg {
+            top: -15px;
+            right: -15px;
+            width: 60px;
+            height: 60px;
+        }
+
+        .expert-card .img img.accent-circle {
+            bottom: -20px;
+            right: -20px;
+            width: 80px;
+            height: 80px;
+        }
+
+        .it-feature-item {
+            padding: 25px 20px 20px !important;
+
+        }
+
+        .it-feature-icon {
+
+            margin-bottom: 10px !important;
+
+        }
+
+        .it-feature-title {
+            margin-bottom: 10px !important;
+        }
+
+        .tp-career-shape-11 {
+            position: absolute;
+            top: 8% !important;
+            right: 25% !important;
+        }
+    </style>
+
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/agntix/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+  <!-- Font Awsome -->
+    <link rel="stylesheet"   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>   
+
+   </head>
+
+
+<body>
+
+
+    <div id="header-container"></div>
+
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+
+            <main>
+
+                <!-- Expert Hero area start -->
+                <div class="tp-contact-me-ptb-portolio p-relative z-index-3 pb-105">
+                    <div class="tp-career-shape-11">
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="123" height="130" viewBox="0 0 123 130"
+                                fill="none">
+                                <path
+                                    d="M58.2803 1.15449C63.3023 14.3017 71.049 54.3533 48.1082 67.0973C36.1831 73.4283 11.7107 77.3064 2.37778 43.9355C-1.14293 31.3468 9.61622 20.8908 32.0893 28.8395C45.055 33.4255 76.4207 44.0467 90.5787 70.0771C98.0511 83.8154 104.166 111.84 99.1745 129.671M99.1745 129.671C100.942 121.014 108.128 104.495 122.737 107.673M99.1745 129.671C100.181 123.978 97.0522 110.014 76.485 99.698M75.3644 33.2431C80.479 35.6688 96.6446 46.4742 101.81 64.2891"
+                                    stroke="currentColor" stroke-width="1.5" />
+                            </svg></span>
+                    </div>
+                    <div class="container container-1230">
+                        <div class="crp-about-shape">
+                            <img data-speed="1.2" src="/assets/img/home-09/about/ab-shape-1.png" alt="" loading="lazy">
+                        </div>
+                        <div class="row">
+                            <div class="crp-service-shape-wrap">
+                                <img class="crp-service-shape-1" data-speed="1.1" style="filter: invert(1);"
+                                    src="/assets/img/home-09/service/service-shape-1.png" alt="" loading="lazy">
+                                <img class="crp-service-shape-2" data-speed="1.1"
+                                    src="/assets/img/home-09/service/service-shape-2.png" alt="" loading="lazy">
+                                <img style="filter: invert(1);" class="crp-service-shape-3" data-speed="1.1"
+                                    src="/assets/img/home-09/service/service-shape-3.png" alt="" loading="lazy">
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="tp-contact-me-heading pb-75 tp_fade_anim" data-delay=".3">
+                                    <span class="dark-color-p tp-section-subtitle-clash clash-subtitle-pos body-ff ">
+                                        Our Experts
+                                        <i>
+                                            <svg width="102" height="9" viewBox="0 0 102 9" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M98 8L101.5 4.5L98 1M1 4H101V5H1V4Z" stroke="currentcolor"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+                                        </i>
+                                    </span>
+                                    <h3 class="dark-color pp-service-details-title">
+                                        Meet the Experts<br>
+                                        <img style="max-width: 300px;" src="/assets/images/our-expert.png" alt="" loading="lazy">of
+                                        Revotic AI
+                                    </h3>
+                                    <p style="font-size: 17px; font-weight: 600; margin-top: 10px; ">Behind every
+                                        success at Revotic AI is a team of talented and passionate experts. Each member
+                                        brings unique skills, fresh ideas, and years of experience that make our vision
+                                        a reality. From problem-solving minds to creative thinkers and strategic
+                                        planners, our experts work hand in hand to explore new possibilities, overcome
+                                        challenges, and create meaningful impact. Together, they are the driving force
+                                        that turns bold ideas into real innovation.</p>
+                                </div>
+                                <div class="tp-contact-me-wrap">
+                                    <div class="dark-color-p pp-about-content tp_text_anim">
+                                        <p>
+                                            Let's start a conversation! fill out our <br> contact form and we’ll get
+                                            back to you <br> as soon as possible
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pp-service-shape">
+                        <img data-speed="1.1" src="/assets/img/home-14/about/about-shape-2.png.html" alt="" loading="lazy">
+                    </div>
+                </div>
+                <!-- contact area end -->
+
+                <div class="experts pb-100 revotic-expert">
+                    <div class="expert-heading text-center mb30 pb-100">
+                        <h3>Meet Our Experts</h3>
+                    </div>
+                    <div class="container container-1330">
+                        <div class="expert-row row">
+                            <!-- Expert Card -->
+                            <!-- <div class="expert-card" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
+                                <div class="img">
+                                    <img class="photo" src="/assets/images/Expert/sayab.png" alt="Sayab Gulfaraz" />
+                                    <img class="overlay dots-svg" src="/assets/images/Expert/line-dot-svg.svg"
+                                        alt="Dots Decoration" />
+                                    <img class="overlay accent-circle" src="/assets/images/Expert/dot-svg.svg"
+                                        alt="Accent Circle" />
+                                </div>
+                                <h4 class="expert-name">Sayab Gulfaraz</h4>
+                                <span class="expert-rol">Founder & Chief Executive Officer</span>
+                            </div>
+
+                            <div class="expert-card">
+                                <img class="dots-svg top-right" src="/assets/images/Expert/line-dot-svg.svg" alt="">
+
+                                <div class="img">
+                                    <img src="/assets/images/Expert/sayab.png" alt="Sayab Gulfaraz" />
+
+                                    <svg class="dots-svg top-right" width="60" height="60" viewBox="0 0 100 100"
+                                        aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                                        fill="#FF7900" opacity="0.6">
+                                        <circle cx="10" cy="10" r="3" />
+                                        <circle cx="30" cy="10" r="3" />
+                                        <circle cx="50" cy="10" r="3" />
+                                        <circle cx="70" cy="10" r="3" />
+                                        <circle cx="90" cy="10" r="3" />
+                                        <circle cx="10" cy="30" r="3" />
+                                        <circle cx="30" cy="30" r="3" />
+                                        <circle cx="50" cy="30" r="3" />
+                                        <circle cx="70" cy="30" r="3" />
+                                        <circle cx="90" cy="30" r="3" />
+                                    </svg>
+
+                                    <svg class="accent-circle bottom-right" width="80" height="80" viewBox="0 0 100 100"
+                                        aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="50" r="50" fill="#FF7900" opacity="0.3" />
+                                    </svg>
+                                </div>
+
+
+                                <div class="content">
+                                    <h4 class="expert-name">SAYAB GULFARAZ</h4>
+                                    <span class="expert-rol">Founder & Chief Executive Officer</span>
+                                </div>
+                            </div>
+
+                            <div class="expert-card">
+                                <div class="img">
+                                    <img src="/assets/images/Expert/sayab.png" alt="Sayab Gulfaraz" />
+
+                                    <svg class="dots-svg top-right" width="60" height="60" viewBox="0 0 100 100"
+                                        aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                                        fill="#FF7900" opacity="0.6">
+                                        <circle cx="10" cy="10" r="3" />
+                                        <circle cx="30" cy="10" r="3" />
+                                        <circle cx="50" cy="10" r="3" />
+                                        <circle cx="70" cy="10" r="3" />
+                                        <circle cx="90" cy="10" r="3" />
+                                        <circle cx="10" cy="30" r="3" />
+                                        <circle cx="30" cy="30" r="3" />
+                                        <circle cx="50" cy="30" r="3" />
+                                        <circle cx="70" cy="30" r="3" />
+                                        <circle cx="90" cy="30" r="3" />
+                                    </svg>
+
+                                    <svg class="accent-circle bottom-right" width="80" height="80" viewBox="0 0 100 100"
+                                        aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="50" r="50" fill="#FF7900" opacity="0.3" />
+                                    </svg>
+                                </div>
+
+                                <div class="content">
+                                    <h4 class="expert-name">SAYAB GULFARAZ</h4>
+                                    <span class="expert-rol">Founder & Chief Executive Officer</span>
+                                </div>
+                            </div> -->
+                            <div class="expert-card">
+                                <div class="img">
+                                    <img src="/assets/images/Expert/sayab.png" alt="Founder & CEO" loading="lazy">
+                                    <!-- SVGs on hover -->
+                                    <svg class="svg-effect svg-top" viewBox="0 0 100 100"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="50" r="40" stroke="gold" stroke-width="4" fill="none" />
+                                    </svg>
+                                    <svg class="svg-effect svg-bottom" viewBox="0 0 100 100"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 100 Q50 0 100 100" stroke="lightblue" stroke-width="4"
+                                            fill="none" />
+                                    </svg>
+
+                                </div>
+                                <div class="content">
+                                    <h4 class="expert-name">SAYAB GULFARAZ</h4>
+                                    <span class="expert-rol">Founder & Chief Executive Officer</span>
+                                </div>
+                            </div>
+                            <div class="expert-card">
+                                <div class="img">
+                                    <img src="/assets/images/Expert/Cofounder-bg.jpg" alt="Expert Image" loading="lazy">
+                                    <!-- SVGs on hover -->
+                                    <svg class="svg-effect svg-top" viewBox="0 0 100 100"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="50" r="40" stroke="gold" stroke-width="4" fill="none" />
+                                    </svg>
+                                    <svg class="svg-effect svg-bottom" viewBox="0 0 100 100"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 100 Q50 0 100 100" stroke="lightblue" stroke-width="4"
+                                            fill="none" />
+                                    </svg>
+                                </div>
+                                <div class="content">
+                                    <h4 class="expert-name">Hasaan Farooq</h4>
+                                    <span class="expert-rol">CoFounder & Chief Information Officer</span>
+                                </div>
+                            </div>
+                            <div class="expert-card">
+                                <div class="img">
+                                    <img src="/assets/images/Expert/female-user-2.png" alt="Expert Image" loading="lazy">
+                                    <!-- SVGs on hover -->
+                                    <svg class="svg-effect svg-top" viewBox="0 0 100 100"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="50" r="40" stroke="gold" stroke-width="4" fill="none" />
+                                    </svg>
+                                    <svg class="svg-effect svg-bottom" viewBox="0 0 100 100"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 100 Q50 0 100 100" stroke="lightblue" stroke-width="4"
+                                            fill="none" />
+                                    </svg>
+                                </div>
+                                <div class="content">
+                                    <h4 class="expert-name">Maria Hanif</h4>
+                                    <span class="expert-rol">Chief Technology Officer</span>
+                                </div>
+                            </div>
+                            <div class="expert-card">
+                                <div class="img">
+                                    <img src="/assets/images/Expert/COO.jpg" alt="Expert Image" loading="lazy">
+                                    <!-- SVGs on hover -->
+                                    <svg class="svg-effect svg-top" viewBox="0 0 100 100"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="50" r="40" stroke="gold" stroke-width="4" fill="none" />
+                                    </svg>
+                                    <svg class="svg-effect svg-bottom" viewBox="0 0 100 100"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 100 Q50 0 100 100" stroke="lightblue" stroke-width="4"
+                                            fill="none" />
+                                    </svg>
+                                </div>
+                                <div class="content">
+                                    <h4 class="expert-name">Jahanzaib Ali</h4>
+                                    <span class="expert-rol">Chief Operating Officer</span>
+                                </div>
+                            </div>
+                            <div class="expert-card">
+                                <div class="img">
+                                    <img src="/assets/images/Expert/new-hos.jpg" alt="Expert Image" loading="lazy">
+                                    <!-- SVGs on hover -->
+                                    <svg class="svg-effect svg-top" viewBox="0 0 100 100"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="50" r="40" stroke="gold" stroke-width="4" fill="none" />
+                                    </svg>
+                                    <svg class="svg-effect svg-bottom" viewBox="0 0 100 100"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 100 Q50 0 100 100" stroke="lightblue" stroke-width="4"
+                                            fill="none" />
+                                    </svg>
+                                </div>
+                                <div class="content">
+                                    <h4 class="expert-name">Asad Minhas</h4>
+                                    <span class="expert-rol">Head of Sales & Project Manager</span>
+                                </div>
+                            </div>
+                            <div class="expert-card">
+                                <div class="img">
+                                    <img src="/assets/images/Expert/female-user-2.png" alt="Expert Image" loading="lazy">
+                                    <!-- SVGs on hover -->
+                                    <svg class="svg-effect svg-top" viewBox="0 0 100 100"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="50" r="40" stroke="gold" stroke-width="4" fill="none" />
+                                    </svg>
+                                    <svg class="svg-effect svg-bottom" viewBox="0 0 100 100"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 100 Q50 0 100 100" stroke="lightblue" stroke-width="4"
+                                            fill="none" />
+                                    </svg>
+                                </div>
+                                <div class="content">
+                                    <h4 class="expert-name">Humna Saleem</h4>
+                                    <span class="expert-rol">Head of Marketing</span>
+                                </div>
+                            </div>
+                            <div class="expert-card">
+                                <div class="img">
+                                    <img src="/assets/images/Expert/anas-op.jpg" alt="Expert Image" loading="lazy">
+                                    <!-- SVGs on hover -->
+                                    <svg class="svg-effect svg-top" viewBox="0 0 100 100"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="50" r="40" stroke="gold" stroke-width="4" fill="none" />
+                                    </svg>
+                                    <svg class="svg-effect svg-bottom" viewBox="0 0 100 100"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 100 Q50 0 100 100" stroke="lightblue" stroke-width="4"
+                                            fill="none" />
+                                    </svg>
+                                </div>
+                                <div class="content">
+                                    <h4 class="expert-name">Anas Faisal</h4>
+                                    <span class="expert-rol">Operation Manager</span>
+                                </div>
+                            </div>
+                            <div class="expert-card">
+                                <div class="img">
+                                    <img src="/assets/images/Expert/om.png" alt="Expert Image" loading="lazy">
+                                    <!-- SVGs on hover -->
+                                    <svg class="svg-effect svg-top" viewBox="0 0 100 100"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="50" r="40" stroke="gold" stroke-width="4" fill="none" />
+                                    </svg>
+                                    <svg class="svg-effect svg-bottom" viewBox="0 0 100 100"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 100 Q50 0 100 100" stroke="lightblue" stroke-width="4"
+                                            fill="none" />
+                                    </svg>
+                                </div>
+                                <div class="content">
+                                    <h4 class="expert-name">Zain Ali</h4>
+                                    <span class="expert-rol">Business Developer</span>
+                                </div>
+                            </div>
+                            <div class="expert-card">
+                                <div class="img">
+                                    <img src="/assets/images/Expert/hr.png" alt="Expert Image" loading="lazy">
+                                    <!-- SVGs on hover -->
+                                    <svg class="svg-effect svg-top" viewBox="0 0 100 100"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="50" r="40" stroke="gold" stroke-width="4" fill="none" />
+                                    </svg>
+                                    <svg class="svg-effect svg-bottom" viewBox="0 0 100 100"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 100 Q50 0 100 100" stroke="lightblue" stroke-width="4"
+                                            fill="none" />
+                                    </svg>
+                                </div>
+                                <div class="content">
+                                    <h4 class="expert-name">Zawad Ahmed</h4>
+                                    <span class="expert-rol">HR Manager</span>
+                                </div>
+                            </div>
+                            <div class="expert-card">
+                                <div class="img">
+                                    <img src="/assets/images/Expert/female-user-2.png" alt="Expert Image" loading="lazy">
+                                    <!-- SVGs on hover -->
+                                    <svg class="svg-effect svg-top" viewBox="0 0 100 100"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="50" r="40" stroke="gold" stroke-width="4" fill="none" />
+                                    </svg>
+                                    <svg class="svg-effect svg-bottom" viewBox="0 0 100 100"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 100 Q50 0 100 100" stroke="lightblue" stroke-width="4"
+                                            fill="none" />
+                                    </svg>
+                                </div>
+                                <div class="content">
+                                    <h4 class="expert-name">Zubiya Faisal</h4>
+                                    <span class="expert-rol">Team Leader</span>
+                                </div>
+                            </div>
+                            <div class="expert-card">
+                                <div class="img">
+                                    <img src="/assets/images/Expert/male-user.webp" alt="Expert Image" loading="lazy">
+                                    <!-- SVGs on hover -->
+                                    <svg class="svg-effect svg-top" viewBox="0 0 100 100"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="50" r="40" stroke="gold" stroke-width="4" fill="none" />
+                                    </svg>
+                                    <svg class="svg-effect svg-bottom" viewBox="0 0 100 100"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 100 Q50 0 100 100" stroke="lightblue" stroke-width="4"
+                                            fill="none" />
+                                    </svg>
+                                </div>
+                                <div class="content">
+                                    <h4 class="expert-name">Shaheer Zahid</h4>
+                                    <span class="expert-rol">AI/ML Developer</span>
+                                </div>
+                            </div>
+                            <div class="expert-card">
+                                <div class="img">
+                                    <img src="/assets/images/Expert/female-user-2.png" alt="Expert Image" loading="lazy">
+                                    <!-- SVGs on hover -->
+                                    <svg class="svg-effect svg-top" viewBox="0 0 100 100"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="50" r="40" stroke="gold" stroke-width="4" fill="none" />
+                                    </svg>
+                                    <svg class="svg-effect svg-bottom" viewBox="0 0 100 100"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 100 Q50 0 100 100" stroke="lightblue" stroke-width="4"
+                                            fill="none" />
+                                    </svg>
+                                </div>
+                                <div class="content">
+                                    <h4 class="expert-name">Aqsa Malik</h4>
+                                    <span class="expert-rol">AI/ML Developer</span>
+                                </div>
+                            </div>
+                            <div class="expert-card">
+                                <div class="img">
+                                    <img src="/assets/images/Expert/male-user.webp" alt="Expert Image">
+                                    <!-- SVGs on hover -->
+                                    <svg class="svg-effect svg-top" viewBox="0 0 100 100"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="50" r="40" stroke="gold" stroke-width="4" fill="none" />
+                                    </svg>
+                                    <svg class="svg-effect svg-bottom" viewBox="0 0 100 100"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 100 Q50 0 100 100" stroke="lightblue" stroke-width="4"
+                                            fill="none" />
+                                    </svg>
+                                </div>
+                                <div class="content">
+                                    <h4 class="expert-name">Sajjad Ahmad</h4>
+                                    <span class="expert-rol">AI/ML Developer</span>
+                                </div>
+                            </div>
+                            <div class="expert-card">
+                                <div class="img">
+                                    <img src="/assets/images/Expert/male-user.webp" alt="Expert Image">
+                                    <!-- SVGs on hover -->
+                                    <svg class="svg-effect svg-top" viewBox="0 0 100 100"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="50" r="40" stroke="gold" stroke-width="4" fill="none" />
+                                    </svg>
+                                    <svg class="svg-effect svg-bottom" viewBox="0 0 100 100"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 100 Q50 0 100 100" stroke="lightblue" stroke-width="4"
+                                            fill="none" />
+                                    </svg>
+                                </div>
+                                <div class="content">
+                                    <h4 class="expert-name">Saad Shah</h4>
+                                    <span class="expert-rol">AI/ML Developer</span>
+                                </div>
+                            </div>
+                            <div class="expert-card">
+                                <div class="img">
+                                    <img src="/assets/images/Expert/female-user-2.png" alt="Expert Image">
+                                    <!-- SVGs on hover -->
+                                    <svg class="svg-effect svg-top" viewBox="0 0 100 100"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="50" r="40" stroke="gold" stroke-width="4" fill="none" />
+                                    </svg>
+                                    <svg class="svg-effect svg-bottom" viewBox="0 0 100 100"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 100 Q50 0 100 100" stroke="lightblue" stroke-width="4"
+                                            fill="none" />
+                                    </svg>
+                                </div>
+                                <div class="content">
+                                    <h4 class="expert-name">Ayesha Noman</h4>
+                                    <span class="expert-rol">Python Developer</span>
+                                </div>
+                            </div>
+                            <div class="expert-card">
+                                <div class="img">
+                                    <img src="/assets/images/Expert/male-user.webp" alt="Expert Image">
+                                    <!-- SVGs on hover -->
+                                    <svg class="svg-effect svg-top" viewBox="0 0 100 100"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="50" r="40" stroke="gold" stroke-width="4" fill="none" />
+                                    </svg>
+                                    <svg class="svg-effect svg-bottom" viewBox="0 0 100 100"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 100 Q50 0 100 100" stroke="lightblue" stroke-width="4"
+                                            fill="none" />
+                                    </svg>
+                                </div>
+                                <div class="content">
+                                    <h4 class="expert-name">Rizwan Abbasi</h4>
+                                    <span class="expert-rol">Full-Stack Developer</span>
+                                </div>
+                            </div>
+                            <div class="expert-card">
+                                <div class="img">
+                                    <img src="/assets/images/Expert/male-user.webp" alt="Expert Image">
+                                    <!-- SVGs on hover -->
+                                    <svg class="svg-effect svg-top" viewBox="0 0 100 100"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="50" r="40" stroke="gold" stroke-width="4" fill="none" />
+                                    </svg>
+                                    <svg class="svg-effect svg-bottom" viewBox="0 0 100 100"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 100 Q50 0 100 100" stroke="lightblue" stroke-width="4"
+                                            fill="none" />
+                                    </svg>
+                                </div>
+                                <div class="content">
+                                    <h4 class="expert-name">Usama</h4>
+                                    <span class="expert-rol">Backend Developer</span>
+                                </div>
+                            </div>
+                            <div class="expert-card">
+                                <div class="img">
+                                    <img src="/assets/images/Expert/male-user.webp" alt="Expert Image">
+                                    <!-- SVGs on hover -->
+                                    <svg class="svg-effect svg-top" viewBox="0 0 100 100"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="50" r="40" stroke="gold" stroke-width="4" fill="none" />
+                                    </svg>
+                                    <svg class="svg-effect svg-bottom" viewBox="0 0 100 100"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 100 Q50 0 100 100" stroke="lightblue" stroke-width="4"
+                                            fill="none" />
+                                    </svg>
+                                </div>
+                                <div class="content">
+                                    <h4 class="expert-name">Ali Raza </h4>
+                                    <span class="expert-rol">Web Developer</span>
+                                </div>
+                            </div>
+                            <!-- Duplicate the above block for more experts -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- service area start -->
+                <div class="crp-service-area d-flex top-margin p-relative pt-80 pb-90">
+                    <div class="crp-service-shape-wrap ">
+                        <img class="crp-service-shape-1" data-speed="1.1"
+                            src="/assets/img/home-09/service/service-shape-1.png" alt="">
+                        <img class="crp-service-shape-2" data-speed="1.1"
+                            src="/assets/img/home-09/service/service-shape-2.png" alt="">
+                        <img class="crp-service-shape-3" data-speed="1.1"
+                            src="/assets/img/home-09/service/service-shape-3.png" alt="">
+                    </div>
+                    <div class="container container-1330">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="crp-service-title-box ">
+                                    <span class="tp-section-subtitle-teko mb-10 tp_fade_anim" data-delay=".3">Creative
+                                        approach</span>
+                                    <h4 style="color: #333;" class="tp-section-title-teko tp_fade_anim" data-delay=".5">
+                                        Revotic AI
+                                        Smart <br> <span style="color: #7c7171;"> Business</span> Solutions
+                                    </h4>
+
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="crp-service-item mt-50 pb-65 d-flex tp_fade_anim" data-delay=".5">
+                                    <div class="crp-service-icon">
+                                        <span>
+                                            <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M34 13.6615V14.1329C34 22.644 28.6701 30.3065 20.5342 33.4779C15.6984 35.3635 10.4303 31.9094 10.4303 26.8438C18.3722 23.7411 23.5698 16.2671 23.5698 7.96178V7.15609L23.8963 7.02753C28.7318 5.1419 34 8.60461 34 13.6615ZM23.5698 7.15609C23.5698 2.09061 18.3016 -1.36353 13.4659 0.5221C5.32987 3.6934 0 11.3559 0 19.867V20.3299C0 25.3954 5.2681 28.8495 10.1038 26.9639L10.4303 26.8353V26.0296C10.4303 17.7328 15.6278 10.2588 23.5698 7.15609Z"
+                                                    fill="#e9ff48" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="crp-service-content">
+                                        <h4 class="expert-heading-color crp-service-title-sm"><a
+                                                class="tp-line-white cream" href="/contact/index.html">Web &
+                                                App Development</a></h4>
+                                        <p class="expert-p-color ">
+                                            Scalable, modern, and high-performing websites and apps
+                                            built with the latest technologies to deliver seamless
+                                            user experiences and business impact.
+                                        </p>
+                                        <a class="crp-service-link" href="/contact/index.html">
+                                            <span>
+                                                <span class="text-1">View More</span>
+                                                <span class="text-2">View More</span>
+                                            </span>
+                                            <i>
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 11L11 1M11 1V11M11 1H1" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 11L11 1M11 1V11M11 1H1" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="crp-service-item mt-50 pb-65 d-flex tp_fade_anim" data-delay=".3">
+                                    <div class="crp-service-icon">
+                                        <span>
+                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="#333"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M15.9994 4.25453e-08C15.9996 2.10111 15.5858 4.18169 14.7818 6.12289C13.9779 8.0641 12.7994 9.82793 11.3136 11.3136C9.82793 12.7994 8.0641 13.9779 6.12289 14.7818C4.18169 15.5858 2.10111 15.9996 4.25443e-08 15.9994C0.000309438 11.7562 1.68606 7.68687 4.68647 4.68647C7.68687 1.68606 11.7562 0.000309438 15.9994 4.25453e-08ZM15.9994 32C18.1007 32.0002 20.1814 31.5864 22.1228 30.7823C24.0642 29.9783 25.828 28.7997 27.3139 27.3139C28.7997 25.828 29.9783 24.0642 30.7823 22.1228C31.5864 20.1814 32.0002 18.1007 32 15.9994C27.7565 15.9997 23.6868 17.6856 20.6863 20.6863C17.6856 23.6868 15.9997 27.7565 15.9994 32ZM4.25443e-08 15.9994C-0.000153182 18.1005 0.41357 20.1812 1.21755 22.1224C2.02153 24.0638 3.20002 25.8277 4.6857 27.3134C6.17141 28.7993 7.93522 29.9779 9.87644 30.7821C11.8177 31.5861 13.8982 32 15.9994 32C15.9994 27.7565 14.3138 23.687 11.3134 20.6863C8.31292 17.6856 4.24341 15.9997 4.25443e-08 15.9994ZM15.9994 4.25453e-08C15.9997 4.24341 17.6856 8.31292 20.6863 11.3134C23.687 14.3138 27.7565 15.9994 32 15.9994C32 13.8982 31.5861 11.8177 30.7821 9.87644C29.9779 7.93522 28.7993 6.17141 27.3134 4.6857C25.8277 3.20002 24.0638 2.02153 22.1224 1.21755C20.1812 0.41357 18.1005 -0.000153182 15.9994 4.25453e-08Z"
+                                                    fill="#e9ff48" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="crp-service-content">
+                                        <h4 class="expert-heading-color crp-service-title-sm"><a
+                                                class="tp-line-white cream" href="/services/index.html">Creative
+                                                & Digital Solutions</a></h4>
+                                        <p class="expert-p-color">
+                                           From UI/UX design to game development, digital branding,
+                                            and business automation solutions. we craft engaging
+                                            innovations that connect technology with human creativity
+                                            for lasting impact.
+                                        </p>
+                                        <a class="crp-service-link" href="/services/index.html">
+                                            <span>
+                                                <span class="text-1">View More</span>
+                                                <span class="text-2">View More</span>
+                                            </span>
+                                            <i>
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 11L11 1M11 1V11M11 1H1" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 11L11 1M11 1V11M11 1H1" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="crp-service-item mt-50 pb-65 d-flex tp_fade_anim" data-delay=".5">
+                                    <div class="crp-service-icon">
+                                        <span>
+                                            <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M34 13.6615V14.1329C34 22.644 28.6701 30.3065 20.5342 33.4779C15.6984 35.3635 10.4303 31.9094 10.4303 26.8438C18.3722 23.7411 23.5698 16.2671 23.5698 7.96178V7.15609L23.8963 7.02753C28.7318 5.1419 34 8.60461 34 13.6615ZM23.5698 7.15609C23.5698 2.09061 18.3016 -1.36353 13.4659 0.5221C5.32987 3.6934 0 11.3559 0 19.867V20.3299C0 25.3954 5.2681 28.8495 10.1038 26.9639L10.4303 26.8353V26.0296C10.4303 17.7328 15.6278 10.2588 23.5698 7.15609Z"
+                                                    fill="#e9ff48" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="crp-service-content ">
+                                        <h4 class="expert-heading-color crp-service-title-sm mt-05"><a
+                                                class="tp-line-white cream" href="/contact/index.html">Start Your Project</a></h4>
+                                        <p class="expert-p-color ">
+                                           Turn your ideas into reality with tailored web and app development solutions. Our team builds scalable, secure, and high-performance digital products that grow with your business.
+                                        </p>
+                                        <a class="crp-service-link" href="/contact/index.html">
+                                            <span>
+                                                <span class="text-1">View More</span>
+                                                <span class="text-2">View More</span>
+                                            </span>
+                                            <i>
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 11L11 1M11 1V11M11 1H1" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 11L11 1M11 1V11M11 1H1" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div >
+                                    <div class="crp-service-icon">
+                                        <span style="background: transparent;">
+                                            
+                                        </span>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- service area end -->
+
+                <!-- Service card area -->
+
+                <!-- brand area end -->
+
+                <!-- feature Services area start -->
+                <div class="it-feature-area it-feature-ptb z-index-2 p-relative pb-55" data-bg-color="#FDF7F4">
+                    <div class="it-feature-brand-shape">
+                        <!-- <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1980" height="121" viewBox="0 0 1980 121"
+                                fill="none">
+                                <path
+                                    d="M1651.4 1.13373L1970.71 75.1373C1976.15 76.3979 1980 81.2437 1980 86.8274V108.077C1980 114.74 1974.57 120.127 1967.91 120.076L11.9091 105.258C5.31738 105.208 0 99.8504 0 93.2584V24.3544C0 16.5721 7.29346 10.8483 14.8527 12.6984L339.997 92.2748C346.375 93.8356 352.822 89.9816 354.467 83.6255L373.536 9.94507C375.18 3.59379 381.62 -0.260145 387.994 1.29266L759.617 91.8242C765.947 93.3664 772.352 89.5756 774.045 83.2841L793.964 9.2801C795.654 3.00175 802.036 -0.788759 808.358 0.731769L1183.03 90.8533C1189.4 92.3843 1195.82 88.5314 1197.46 82.1939L1216.04 10.4265C1217.68 4.07977 1224.11 0.22659 1230.48 1.77277L1603.51 92.3026C1609.89 93.8489 1616.32 89.995 1617.96 83.6477L1637.07 9.81727C1638.7 3.51669 1645.06 -0.335644 1651.4 1.13373Z"
+                                    fill="#FDF7F4" />
+                            </svg>
+                        </span> -->
+                    </div>
+                    <div class="it-feature-shape-1">
+                        <img style="filter: invert(1); opacity: 0.5;" data-speed="1.1"
+                            src="/assets/img/home-11/feature/shape-1.png" alt="">
+                    </div>
+                    <div class="container container-1460">
+                        <div class="row justify-content-center">
+                            <div class="col-xl-6">
+                                <div class="it-feature-title-box text-center mb-70">
+                                    <span
+                                        class="tp-section-subtitle-platform platform-text-black tp-split-text tp-split-right">Core
+                                        Our Expertise</span>
+                                    <h4
+                                        class="tp-section-title-platform platform-text-black fs-200 tp-split-text tp-split-right">
+                                        What We Offer</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-xl-4 service-gap-padding col-md-6 mb-10 tp_fade_anim" data-delay=".3">
+                                <div class="it-feature-item text-center tp_fade_ainm">
+                                    <h4 class="it-feature-title"><a class="tp-line-black" href="/portfolio/index.html">AI
+                                            Automation</a></h4>
+                                    <div class="it-feature-icon color-1">
+                                        <img width="100px" src="/assets/images/ai-automation.webp" alt="">
+                                    </div>
+                                    <div class="it-feature-content">
+                                        <p>
+                                            Automate workflows, reduce manual tasks,
+                                            and scale smarter with AI-driven automation.
+                                        </p>
+                                    </div>
+                                    <div class="it-feature-category">
+                                        <span>Automation</span>
+                                        <span>Productivity</span>
+                                        <span>Growth</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 service-gap-padding col-md-6 mb-25 tp_fade_anim" data-delay=".5">
+                                <div class="it-feature-item text-center tp_fade_ainm">
+                                    <h4 class="it-feature-title"><a class="tp-line-black" href="/portfolio/index.html">AI
+                                            SaaS Solutions</a></h4>
+                                    <div class="it-feature-icon color-2">
+                                        <img width="130px" src="/assets/images/products/saas3.png" alt="">
+                                    </div>
+                                    <div class="it-feature-content">
+                                        <p>
+                                            Build powerful, scalable SaaS platforms
+                                            powered by AI to solve real-world challenges
+                                        </p>
+                                    </div>
+                                    <div class="it-feature-category">
+                                        <span>SaaS</span>
+                                        <span>Innovation</span>
+                                        <span>Scalability</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 service-gap-padding col-md-6 mb-25 tp_fade_anim" data-delay=".7">
+                                <div class="it-feature-item text-center tp_fade_ainm">
+                                    <h4 class="it-feature-title"><a class="tp-line-black"
+                                            href="/portfolio/index.html">Full-Stack Development</a></h4>
+                                    <div class="it-feature-icon color-3">
+                                        <img width="120px" src="/assets/images/products/fweb-22.png" alt="web development" loading="lazy">
+                                    </div>
+                                    <div class="it-feature-content">
+                                        <p>
+                                            Modern websites and apps with
+                                            seamless AI integration for next-gen experiences.
+                                        </p>
+                                    </div>
+                                    <div class="it-feature-category">
+                                        <span>WEB</span>
+                                        <span>APP</span>
+                                        <span>Tools</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 service-gap-padding col-md-6 mb-25 tp_fade_anim" data-delay=".3">
+                                <div class="it-feature-item text-center tp_fade_ainm">
+                                    <h4 class="it-feature-title"><a class="tp-line-black" href="/portfolio/index.html">AI
+                                            Dashboards</a></h4>
+                                    <div class="it-feature-icon color-4">
+                                        <img width="120px" src="/assets/images/products/ai_dashboard.png" alt="">
+                                    </div>
+                                    <div class="it-feature-content">
+                                        <p>
+                                            Interactive dashboards that turn
+                                            data into actionable business insights.
+                                        </p>
+                                    </div>
+                                    <div class="it-feature-category">
+                                        <span>Analytics</span>
+                                        <span>Insights</span>
+                                        <span>DATA</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 service-gap-padding col-md-6 mb-25 tp_fade_anim" data-delay=".5">
+                                <div class="it-feature-item text-center tp_fade_ainm">
+                                    <h4 class="it-feature-title"><a class="tp-line-black"
+                                            href="/portfolio/index.html">UI/UX Design</a></h4>
+                                    <div class="it-feature-icon color-5">
+                                        <img src="/assets/images/products/UI-UX-Design1.png" alt="">
+                                    </div>
+                                    <div class="it-feature-content">
+                                        <p>
+                                            Stunning, user-friendly designs that
+                                            create seamless web & mobile experiences.
+                                        </p>
+                                    </div>
+                                    <div class="it-feature-category">
+                                        <span>Website</span>
+                                        <span>Landing Page</span>
+                                        <span>Mobile App</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 service-gap-padding col-md-6 mb-25 tp_fade_anim" data-delay=".7">
+                                <div class="it-feature-item it-feature-item-style-bg d-flex justify-content-between flex-column z-index-1 tp_fade_ainm"
+                                    data-background="/assets/img/home-11/feature/img-1.png">
+                                    <div class="it-feature-content">
+                                        <h4 style="color: #333; font-weight: 600; font-size: 42x;"
+                                            class="it-feature-title"> Ready to Scale Your Business? <br> Talk to Our AI
+                                            & Automation <br> Experts Today
+                                        </h4>
+                                    </div>
+                                    <div class="it-feature-btn-box">
+                                        <a style="background:  rgb(95 91 91 / 88%) !important"
+                                            class="tp-btn-black-radius btn-blur d-flex align-items-center justify-content-between"
+                                            href="/contact/index.html">
+                                            <span>
+                                                <span class="text-1">Book a Free Consultation</span>
+                                                <span class="text-2">Book a Free Consultation</span>
+                                            </span>
+                                            <i>
+                                                <span>
+                                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 9L9 1M9 1H1M9 1V9" stroke="#21212D" stroke-width="2"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 9L9 1M9 1H1M9 1V9" stroke="#21212D" stroke-width="2"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </span>
+                                            </i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- feature area end -->
+
+                <!-- Service card area End -->
+
+
+
+
+            </main>
+
+           
+            <footer>
+                <!-- Footer Slider Section -->
+         
+                <!-- Footer Top Section -->
+                <div class="ft-top">
+                    <div class="footer__top  pt-120 pb-120 ">
+                        <div class="fl  footer-pd" data-aos="fade-up" data-aos-duration="1000">
+                            Get In Touch
+                        </div>
+                        <div class="row g-4">
+                            <div class="col-lg-6">
+                                <div class="get__content" data-aos="fade-up" data-aos-duration="900">
+                                    <p style="color: #d4d4d4;">
+                                        At Revotic AI, we combine Artificial Intelligence, Machine Learning, and modern
+                                        development to build intelligent solutions that empower businesses. From
+                                        automation
+                                        to full-stack development, we create innovative products designed to
+                                        make technology smarter, faster, and more personalized.
+                                    </p>
+                                    <a style="text-transform:none; text-decoration:none;"
+                                        href="mailto:contact@revoticai.com">contact@revoticai.com</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="get__rightcontetn">
+                                    <div class="row g-4">
+                                        <div class="col-lg-6 col-md-6 col-sm-6" data-aos="fade-up"
+                                            data-aos-duration="1200">
+                                            <a href="https://facebook.com/revoticai" target="_blank"
+                                                rel="noopener noreferrer" class="social__footer">
+                                                Facebook <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-6" data-aos="fade-up"
+                                            data-aos-duration="1400">
+                                            <a href="https://x.com/revoticai" target="_blank" rel="noopener noreferrer"
+                                                class="social__footer">
+                                                X / Twitter <i class="fab fa-x-twitter"></i>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-6" data-aos="fade-up"
+                                            data-aos-duration="1600">
+                                            <a href="https://linkedin.com/company/revoticai" target="_blank"
+                                                rel="noopener noreferrer" class="social__footer">
+                                                LinkedIn <i class="fab fa-linkedin-in"></i>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-6" data-aos="fade-up"
+                                            data-aos-duration="1800">
+                                            <a href="https://github.com/revoticai" target="_blank"
+                                                rel="noopener noreferrer" class="social__footer">
+                                                GitHub <i class="fab fa-github"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer Middle Section -->
+                <div class="ft-mid">
+                    <div class="footer-mid" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="footer-row">
+                            <div class="footer-col">
+                                <h4>Information</h4>
+                                <ul class="links">
+                                    <li><a href="/about/index.html">About Us</a></li>
+                                    <li><a href="/contact/index.html">Contact Us</a></li>
+                                    <li><a href="/portfolio/index.html">Portfolio</a></li>
+                                    <li><a href="/services/index.html">Service</a></li>
+                                    <li><a href="/blogs/index.html">Blogs</a></li>
+                                    <li><a href="/experts/index.html">Our Experts</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-col">
+                                <h4>Explore Services</h4>
+                                <ul class="links">
+                                    <li><a href="/services/index.html">AI & ML Automation</a></li>
+                                    <li><a href="/services/index.html">AI SaaS Products</a></li>
+                                    <li><a href="/services/index.html">Full Stack Development</a></li>
+                                    <li><a href="/services/index.html">AI-Powered Web Development</a></li>
+                                    <li><a href="/services/index.html">AI-Powered App Development</a></li>
+                                    <li><a href="/services/index.html">Personalized AI Dashboards</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-col">
+                                <h4>Legal</h4>
+                                <ul class="links">
+                                    <li><a href="/terms-and-conditions.html">Terms & Conditions</a></li>
+                                    <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+                                    <li><a href="/cookies-policy.html">Cookie Policy</a></li>
+                                    <!-- <li><a href="#">GDPR</a></li>
+                           <li><a href="#">Data Protection Policy</a></li>
+                           <li><a href="#">Refund & Cancellation Policy</a></li> -->
+                                </ul>
+                            </div>
+                            <div class="footer-col">
+                                <h4>Newsletter</h4>
+                                <p>
+                                    Subscribe our newsletter to Join our journey to
+                                    revolutionize the future of your Business with AI.
+                                </p>
+                                <form action="#">
+                                    <input type="text" placeholder="Your email" required>
+                                    <button type="submit">SUBSCRIBE</button>
+    <p id="newsletter-response" style="margin-top: 10px; font-size: 14px;"></p>
+                                </form>
+                                <div class="icons">
+                                    <a href="https://youtube.com/revoticai"><i class="fa-brands fa-youtube"></i></a>
+                                    <a href="https://linkedin.com/company/revoticai"><i
+                                            class="fa-brands fa-linkedin"></i></a>
+                                    <a href="https://github.com/revoticai"><i class="fa-brands fa-github"></i></a>
+                                    <a href="https://x.com/revoticai"><i class="fa-brands fa-x-twitter"></i></a>
+                                    <a href="https://facebook.com/revoticai"><i class=" fa-brands fa-facebook-f"></i></a>
+                                    <a href="https://instagram.com/revoticai"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer Copyright Section -->
+                <div class="ft-end">
+                    <div class="tp-copyright-area ">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="tp-copyright-content text-center text-md-start tp_fade_anim"
+                                        data-delay=".3" data-fade-from="bottom" data-ease="bounce" data-on-scroll="3"
+                                        data-aos="fade-up" data-aos-duration="1000">
+                                        <h2 style="text-transform: capitalize;" class="tp-copyright-big-text">
+                                            RevoticAI.com</h2>
+                                    </div>
+                                    <div>
+                                        <p class="copy-right-year-text" data-aos="fade-up" data-aos-duration="700">
+                                            &copy; <span id="year"></span> All rights reserved by
+                                            <span> <a href="/">Revotic AI</a></span> | Developed by Revotic AI Team With
+                                            Love
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+
+        </div>
+    </div>
+
+
+
+    <!-- JS here -->
+
+    <script>
+        function loadComponent(id, file) {
+            fetch(file)
+                .then(res => res.text())
+                .then(html => {
+                    document.getElementById(id).innerHTML = html;
+
+                    // Automatically run scripts when a component loads
+                    if (file.includes("header.html")) {
+                        initMobileMenu();
+                    }
+                })
+                .catch(err => console.error(`Error loading ${file}:`, err));
+        }
+
+        // Use this everywhere, no need to pass callback manually
+        loadComponent("header-container", "../components/header.html");
+
+        function initMobileMenu() {
+            const menuToggle = document.getElementById('menuToggle');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const closeMenuBtn = document.getElementById('closeMenu');
+            const overlay = document.getElementById('overlay');
+            const navLinks = mobileMenu?.querySelectorAll('a');
+
+            function openMenu() {
+                mobileMenu?.classList.add('active');
+                overlay?.classList.add('active');
+            }
+
+            function closeMenu() {
+                mobileMenu?.classList.remove('active');
+                overlay?.classList.remove('active');
+            }
+
+            menuToggle?.addEventListener('click', () => {
+                if (mobileMenu?.classList.contains('active')) {
+                    closeMenu();
+                } else {
+                    openMenu();
+                }
+            });
+
+            closeMenuBtn?.addEventListener('click', closeMenu);
+            overlay?.addEventListener('click', closeMenu);
+            navLinks?.forEach(link => link.addEventListener('click', closeMenu));
+
+            document.addEventListener('keydown', e => {
+                if (e.key === 'Escape') closeMenu();
+            });
+        }
+    </script>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', async (e) => {
+            e.preventDefault(); // prevents normal form submission
+            const payload = {
+                name: e.target.name.value,
+                email: e.target.email.value,
+                message: e.target.message.value
+            };
+            const res = await fetch((window.REVOTIC_BACKEND || '') + '/contact', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            });
+            const json = await res.json();
+            alert(json.message || 'Done');
+        });
+    </script>
+
+    <!-- <script src="/assets/js/header.js" defer></script> -->
+
+
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+ <script src="/assets/js/vertical-beforeafter.js"></script>
+    <script src="/assets/js/slider-init.js"></script>
+    <script src="/assets/js/swiper-bundle.js"></script>
+    <!-- JS here -->
+</body>
+
+</html>

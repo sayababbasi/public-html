@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>Revotic AI</title>
+
+   <!-- CSS Files -->
+   <link rel="stylesheet" href="/assets/css/style.css" />
+   <link rel="stylesheet" href="/assets/css/header.css" />
+   <link rel="stylesheet" href="/assets/css/main.css">
+   <link rel="stylesheet" href="/assets/css/animate.css" />
+   <link rel="stylesheet" href="/assets/css/bootstrap.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+   <!-- <style>
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+      }
+
+      header {
+         width: 100% !important;
+         z-index: 1000;
+      }
+
+      .tp-header-area {
+         width: 100%;
+         /* background: #f5f5f5; */
+
+         padding: 15px 0;
+      }
+
+      /* Use container-fluid for full width */
+      .tp-header-area .container-fluid {
+         width: 100%;
+         padding: 0 0px;
+         min-width: 100% !important;
+      }
+
+      .tp-header-box .row {
+         width: 100% !important;
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         flex-wrap: nowrap;
+      }
+
+      .tp-header-logo img {
+         max-height: 70px;
+      }
+
+
+      nav ul {
+         list-style: none;
+         display: flex;
+         justify-content: center;
+         gap: 25px;
+      }
+
+      nav ul li a {
+         text-decoration: none;
+         color: #2e2e2e !important;
+         font-weight: 500;
+         transition: 0.3s;
+      }
+
+      .tp-btn-yellow {
+         background: #f8e71c;
+         padding: 10px 15px;
+         border-radius: 8px;
+         font-size: 14px;
+         font-weight: 600;
+         display: inline-flex;
+         align-items: center;
+         gap: 6px;
+         text-decoration: none;
+         color: #000;
+      }
+
+      .tp-btn-yellow span {
+         display: block;
+         line-height: 1.2;
+      }
+
+      /* HAMBURGER */
+      .hamburger {
+         display: none;
+         font-size: 26px;
+         cursor: pointer;
+         color: #000;
+      }
+
+      /* MOBILE MENU OVERLAY */
+      .overlay {
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background: rgba(0, 0, 0, 0.5);
+         display: none;
+         z-index: 1500;
+      }
+
+      .overlay.active {
+         display: block;
+      }
+
+      .mobile-menu {
+         position: fixed;
+         top: 0;
+         right: -100%;
+         width: 85%;
+         max-width: 360px;
+         height: 100%;
+         background: #fff;
+         box-shadow: -3px 0 10px rgba(0, 0, 0, 0.1);
+         transition: right 0.3s ease-in-out;
+         z-index: 2000;
+         padding: 20px;
+         overflow-y: auto;
+      }
+
+      .mobile-menu.active {
+         right: 0;
+      }
+
+      .mobile-menu .menu-header {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+      }
+
+      .mobile-menu .menu-header img {
+         max-height: 40px;
+      }
+
+      .mobile-menu .close-menu {
+         font-size: 32px;
+         cursor: pointer;
+      }
+
+      .mobile-menu ul {
+         margin-top: 30px;
+         list-style: none;
+         padding: 0;
+      }
+
+      .mobile-menu ul li {
+         margin: 15px 0;
+      }
+
+      .mobile-menu ul li a {
+         text-decoration: none;
+         font-size: 16px;
+         color: #000;
+         font-weight: 500;
+         transition: 0.3s;
+      }
+
+      .mobile-menu ul li a:hover {
+         color: #f39c12;
+      }
+
+      .mobile-menu .info {
+         margin-top: 30px;
+         font-size: 14px;
+         color: #444;
+      }
+
+      .mobile-menu .info strong {
+         display: block;
+         margin: 15px 0 5px;
+         font-weight: 600;
+      }
+
+      .social-icons {
+         display: flex;
+         gap: 15px;
+         margin-top: 15px;
+      }
+
+      .social-icons a {
+         color: #000;
+         font-size: 18px;
+         transition: 0.3s;
+      }
+
+      .social-icons a:hover {
+         color: #f39c12;
+      }
+
+      /* RESPONSIVE */
+      @media (max-width: 991px) {
+         nav {
+            display: none;
+         }
+
+         .cta-btn {
+            display: none;
+         }
+
+         .hamburger {
+            display: block;
+            text-align: right;
+            font-size: 22px;
+         }
+
+         .tp-header-logo img {
+            max-width: 140px;
+            height: auto;
+         }
+      }
+
+      @media (max-width: 450px) {
+         .hamburger {
+            font-size: 20px;
+
+         }
+
+         .tp-header-logo img {
+            max-width: 140px;
+            height: auto;
+         }
+      }
+
+      @media (max-width: 300px) {
+         .hamburger {
+            font-size: 17px;
+
+         }
+
+         .tp-header-logo {
+
+            margin-left: 0 !important;
+            padding-left: 0 !important;
+
+         }
+
+         .tp-header-logo img {
+            max-width: 100px;
+            height: auto;
+         }
+      }
+
+      @media (max-width: 200px) {
+         .hamburger {
+            font-size: 12px;
+
+         }
+
+         .tp-header-logo {
+
+            margin-left: 0 !important;
+            padding-left: 0 !important;
+
+         }
+
+         .tp-header-logo img {
+            max-width: 60px;
+            height: auto;
+         }
+      }
+   </style> -->
+  <!-- Font Awsome -->
+    <link rel="stylesheet"   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>   
+
+   </head>
+
+
+<body>
+   <header>
+      <div class="tp-header-area">
+         <div class="container container-1350">
+            <div class="tp-header-box">
+               <div class="row d-flex align-items-center">
+                  <!-- Logo -->
+                  <div class="col-lg-2 col-3 header-logo">
+                     <div class="tp-header-logo">
+                        <a href="/index.html"><img src="/assets/images/logo.webp" alt="Revotic AI Logo" /></a>
+                     </div>
+                  </div>
+
+                  <!-- Navigation (desktop only) -->
+                  <div class="col-lg-7 d-none align-items-center d-lg-block mid-nav-item">
+                     <div class="tp-header-menu text-center">
+                        <nav>
+                           <ul>
+                              <li class="m-0 "><a href="/services/index.html">Services</a></li>
+                              <li class="m-0 "><a href="/portfolio/index.html">Portfolio</a></li>
+                              <li class="m-0 "><a href="/experts/index.html">Our Experts</a></li>
+                              <li class="m-0 "><a href="/blogs/index.html">Blog</a></li>
+                              <li class="m-0 "><a href="/contact/index.html">Contact</a></li>
+                              <li class="m-0 "><a href="/about/index.html">About</a></li>
+                           </ul>
+                        </nav>
+                     </div>
+                  </div>
+
+                  <!-- CTA + Hamburger -->
+                  <div class="col-lg-3 col-6 d-flex justify-content-end align-items-center">
+                     <div class="tp-header-btn d-none d-lg-block">
+                        <a class="tp-btn-yellow d-inline-flex align-items-center" href="/contact/index.html"
+                           target="_blank">
+                           <i>
+                              <svg width="16px" height="16px" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg"
+                                 fill="none">
+                                 <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"
+                                    d="M92.953 57.154c22.628-22.627 57.983-35.355 76.368-33.94 1.414 18.384-11.314 53.74-33.941 76.367-22.628 22.627-48.084 39.598-62.226 45.255L47.698 119.38c5.657-14.142 22.628-39.598 45.255-62.226Zm-5.657 48.084-39.598 39.598" />
+                                 <circle cx="128.309" cy="64.225" r="12" fill="#000"
+                                    transform="rotate(45 128.309 64.225)" />
+                                 <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"
+                                    d="m115.581 119.38 1.569 17.256c.779 8.57-3.09 16.9-10.139 21.835l-16.886 11.82-1.414-32.527M73.154 76.953l-17.256-1.569a24 24 0 0 0-21.835 10.139l-11.82 16.886 32.527 1.414" />
+                              </svg>
+                           </i>
+                           <span>
+                              <span class="text-1">Boost Your Business</span>
+                              <span class="text-2">Book a Free CALL</span>
+                           </span>
+                        </a>
+                     </div>
+                     <div class="hamburger d-lg-none" id="menuToggle">
+                        <i class="fa-solid fa-bars"></i>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Overlay -->
+   <div class="overlay" id="overlay"></div>
+
+   <!-- Mobile Overlay Menu -->
+   <div class="mobile-menu" id="mobileMenu">
+      <div class="menu-header">
+         <a href="/index.html"><img src="/assets/images/logo.webp" alt="Logo" /></a>
+         <div class="close-menu" id="closeMenu">&times;</div>
+      </div>
+
+      <ul>
+         <li><a href="/services/index.html">Services</a></li>
+         <li><a href="/portfolio/index.html">Portfolio</a></li>
+         <li><a href="/experts/index.html">Our Experts</a></li>
+         <li><a href="/blogs/index.html">Blog</a></li>
+         <li><a href="/contact/index.html">Contact</a></li>
+         <li><a href="/about/index.html">About</a></li>
+      </ul>
+
+      <!-- Extra Action Button inside mobile menu -->
+      <div style="margin-top: 20px;">
+         <a class="tp-btn-yellow d-inline-flex align-items-center" href="/contact/index.html" target="_blank">
+            <i>
+               <svg width="16px" height="16px" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="none">
+                  <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"
+                     d="M92.953 57.154c22.628-22.627 57.983-35.355 76.368-33.94 1.414 18.384-11.314 53.74-33.941 76.367-22.628 22.627-48.084 39.598-62.226 45.255L47.698 119.38c5.657-14.142 22.628-39.598 45.255-62.226Zm-5.657 48.084-39.598 39.598" />
+                  <circle cx="128.309" cy="64.225" r="12" fill="#000" transform="rotate(45 128.309 64.225)" />
+                  <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"
+                     d="m115.581 119.38 1.569 17.256c.779 8.57-3.09 16.9-10.139 21.835l-16.886 11.82-1.414-32.527M73.154 76.953l-17.256-1.569a24 24 0 0 0-21.835 10.139l-11.82 16.886 32.527 1.414" />
+               </svg>
+            </i>
+            <span>
+               <span class="text-1">Boost Your Business</span>
+               <span class="text-2">Book a Free CALL</span>
+            </span>
+         </a>
+      </div>
+
+      <div class="info">
+         <strong>INFORMATION</strong>
+         <p>+92 3160513841</p>
+         <p>contact@revoticai.com</p>
+         <p>Spring Valley Bani Gala, Islamabad</p>
+
+         <strong>About Revotic AI</strong>
+         <p>
+            Revotic AI is a future-driven tech company specializing in intelligent automation,
+            AI-powered platforms, and modern digital solutions.
+            We help startups and enterprises scale fast through smart, data-driven technologies.
+         </p>
+         <a href="/about/index.html" style="color: #f39c12; font-weight: 600; text-decoration: none;">Learn More →</a>
+
+         <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+         </div>
+      </div>
+   </div>
+   </header>
+
+   
+
+   <!-- Scripts -->
+   <script>
+      const menuToggle = document.getElementById('menuToggle');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const closeMenuBtn = document.getElementById('closeMenu');
+      const overlay = document.getElementById('overlay');
+      const navLinks = mobileMenu.querySelectorAll('a');
+
+      function openMenu() {
+         mobileMenu.classList.add('active');
+         overlay.classList.add('active');
+      }
+      function closeMenu() {
+         mobileMenu.classList.remove('active');
+         overlay.classList.remove('active');
+      }
+
+      menuToggle.addEventListener('click', () => {
+         if (mobileMenu.classList.contains('active')) {
+            closeMenu();
+         } else {
+            openMenu();
+         }
+      });
+
+      closeMenuBtn.addEventListener('click', closeMenu);
+      overlay.addEventListener('click', closeMenu);
+
+      // Close menu when any nav link is clicked
+      navLinks.forEach(link => {
+         link.addEventListener('click', closeMenu);
+      });
+
+      // Close on ESC key
+      document.addEventListener('keydown', e => {
+         if (e.key === 'Escape') closeMenu();
+      });
+   </script>
+
+
+</body>
+
+</html>

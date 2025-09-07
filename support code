@@ -1,0 +1,793 @@
+
+
+<!-- Header -->
+
+   <!-- back to top end -->
+   <div id="header">
+      <!-- Keep your logo + navigation here -->
+      <header>
+         <div class="tp-header-area">
+            <div class="container-1350 container">
+               <div class="tp-header-box">
+                  <div class="row d-flex align-items-center">
+                     <!-- Logo -->
+                     <div class="col-lg-2 col-3 header-logo">
+                        <div class="tp-header-logo">
+                           <a style="filter: invert(1);" href="/index.html"><img src="/assets/images/logo.webp"
+                                 alt="Revotic AI Logo" /></a>
+                        </div>
+                     </div>
+
+                     <!-- Navigation (desktop only) -->
+                     <div class="col-lg-7 d-none align-items-center d-lg-block mid-nav-item">
+                        <div class="tp-header-menu text-center">
+                           <nav>
+                              <ul>
+                                 <li class="m-0 p-0"><a href="/services/index.html">Services</a></li>
+                                 <li class="m-0 p-0"><a href="/portfolio/index.html">Portfolio</a></li>
+                                 <li class="m-0 p-0"><a href="/experts/index.html">Our Experts</a></li>
+                                 <li class="m-0 p-0"><a href="/blogs/index.html">Blog</a></li>
+                                 <li class="m-0 p-0"><a href="/contact/index.html">Contact</a></li>
+                                 <li class="m-0 p-0"><a href="/about/index.html">About</a></li>
+                              </ul>
+                           </nav>
+                        </div>
+                     </div>
+
+                     <!-- CTA + Hamburger -->
+                     <div class="col-lg-3 col-6 d-flex justify-content-end align-items-center">
+                        <div class="tp-header-btn d-none d-lg-block">
+                           <a class="tp-btn-yellow d-inline-flex align-items-center" href="/contact/index.html"
+                              target="_blank">
+                              <i>
+                                 <svg width="16px" height="16px" viewBox="0 0 192 192"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none">
+                                    <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"
+                                       d="M92.953 57.154c22.628-22.627 57.983-35.355 76.368-33.94 1.414 18.384-11.314 53.74-33.941 76.367-22.628 22.627-48.084 39.598-62.226 45.255L47.698 119.38c5.657-14.142 22.628-39.598 45.255-62.226Zm-5.657 48.084-39.598 39.598" />
+                                    <circle cx="128.309" cy="64.225" r="12" fill="#000"
+                                       transform="rotate(45 128.309 64.225)" />
+                                    <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"
+                                       d="m115.581 119.38 1.569 17.256c.779 8.57-3.09 16.9-10.139 21.835l-16.886 11.82-1.414-32.527M73.154 76.953l-17.256-1.569a24 24 0 0 0-21.835 10.139l-11.82 16.886 32.527 1.414" />
+                                 </svg>
+                              </i>
+                              <span>
+                                 <span class="text-1">Boost Your Business</span>
+                                 <span class="text-2">Book a Free CALL</span>
+                              </span>
+                           </a>
+                        </div>
+                        <div class="hamburger d-lg-none" id="menuToggle">
+                           <i style="color: #ffffff;" class="fa-solid fa-bars"></i>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Overlay -->
+         <div class="overlay" id="overlay"></div>
+
+         <!-- Mobile Overlay Menu -->
+         <div class="mobile-menu" id="mobileMenu">
+            <div class="menu-header">
+               <a href="/index.html"><img src="/assets/images/logo.webp" alt="Logo" /></a>
+               <div class="close-menu" id="closeMenu">&times;</div>
+            </div>
+
+            <ul>
+               <li><a href="/services/index.html">Services</a></li>
+               <li><a href="/portfolio/index.html">Portfolio</a></li>
+               <li><a href="/experts/index.html">Our Experts</a></li>
+               <li><a href="/blogs/index.html">Blog</a></li>
+               <li><a href="/contact/index.html">Contact</a></li>
+               <li><a href="/about/index.html">About</a></li>
+            </ul>
+
+            <!-- Extra Action Button inside mobile menu -->
+            <div style="margin-top: 20px;">
+               <a class="tp-btn-yellow d-inline-flex align-items-center" href="/contact/index.html" target="_blank">
+                  <i>
+                     <svg width="16px" height="16px" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg"
+                        fill="none">
+                        <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"
+                           d="M92.953 57.154c22.628-22.627 57.983-35.355 76.368-33.94 1.414 18.384-11.314 53.74-33.941 76.367-22.628 22.627-48.084 39.598-62.226 45.255L47.698 119.38c5.657-14.142 22.628-39.598 45.255-62.226Zm-5.657 48.084-39.598 39.598" />
+                        <circle cx="128.309" cy="64.225" r="12" fill="#000" transform="rotate(45 128.309 64.225)" />
+                        <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"
+                           d="m115.581 119.38 1.569 17.256c.779 8.57-3.09 16.9-10.139 21.835l-16.886 11.82-1.414-32.527M73.154 76.953l-17.256-1.569a24 24 0 0 0-21.835 10.139l-11.82 16.886 32.527 1.414" />
+                     </svg>
+                  </i>
+                  <span>
+                     <span class="text-1">Boost Your Business</span>
+                     <span class="text-2">Book a Free CALL</span>
+                  </span>
+               </a>
+            </div>
+
+            <div class="info">
+               <strong>INFORMATION</strong>
+               <p>+92 3160513841</p>
+               <p>contact@revoticai.com</p>
+               <p>Spring Valley Bani Gala, Islamabad</p>
+
+               <strong>About Revotic AI</strong>
+               <p>
+                  Revotic AI is a future-driven tech company specializing in intelligent automation,
+                  AI-powered platforms, and modern digital solutions.
+                  We help startups and enterprises scale fast through smart, data-driven technologies.
+               </p>
+               <a href="/about/index.html" style="color: #f39c12; font-weight: 600; text-decoration: none;">Learn More
+                  →</a>
+
+               <div class="social-icons">
+                  <a href="#"><i class="fa-brands fa-github"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                  <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+               </div>
+            </div>
+         </div>
+      </header>
+   </div>
+
+
+   
+<!-- HOME PAGE POP UP EMAIL -->
+
+   <!-- Limited Time Offer Popup (Light Theme, Full Form) -->
+   <style>
+      :root {
+         --rev-pop-bg: #ffffff;
+         --rev-pop-text: #222;
+         --rev-pop-muted: #666;
+         --rev-pop-accent: #222;
+         /* dark gray accent */
+         --rev-pop-border: #ddd;
+      }
+
+      /* Backdrop */
+      .rev-pop-backdrop {
+         position: fixed;
+         inset: 0;
+         background: rgba(0, 0, 0, .3);
+         opacity: 0;
+         pointer-events: none;
+         transition: opacity .3s ease;
+         z-index: 9998;
+      }
+
+      .rev-pop-backdrop.rev-open {
+         opacity: 1;
+         pointer-events: auto;
+      }
+
+      /* Popup */
+      .rev-pop {
+         position: fixed;
+         left: 50%;
+         top: 50%;
+         transform: translate(-50%, -50%) scale(0.9);
+         width: min(600px, 95vw);
+         background: var(--rev-pop-bg);
+         color: var(--rev-pop-text);
+         border-radius: 14px;
+         border: 1px solid var(--rev-pop-border);
+         box-shadow: 0 8px 40px rgba(0, 0, 0, .25);
+         opacity: 0;
+         transition: transform .3s ease, opacity .3s ease;
+         z-index: 9999;
+         padding: 24px 28px;
+         pointer-events: none;
+      }
+
+      .rev-pop.rev-open {
+         transform: translate(-50%, -50%) scale(1);
+         opacity: 1;
+         pointer-events: auto;
+      }
+
+      /* Header */
+      .rev-pop h2 {
+         margin: 0 0 6px;
+         font-size: 22px;
+      }
+
+      .rev-pop p {
+         margin: 0 0 14px;
+         color: var(--rev-pop-muted);
+      }
+
+      /* Countdown */
+      .rev-countdown {
+         font-size: 16px;
+         font-weight: 700;
+         color: var(--rev-pop-accent);
+         margin-bottom: 16px;
+      }
+
+      /* Form */
+      .rev-pop-form {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         gap: 12px;
+      }
+
+      .rev-pop-form .full {
+         grid-column: 1 / -1;
+      }
+
+      .rev-pop-input,
+      .rev-pop-select,
+      .rev-pop-textarea {
+         padding: 10px;
+         border-radius: 8px;
+         border: 1px solid var(--rev-pop-border);
+         width: 100%;
+         font-size: 14px;
+         color: var(--rev-pop-text);
+         background: #fff;
+      }
+
+      .rev-pop-input::placeholder,
+      .rev-pop-textarea::placeholder {
+         color: var(--rev-pop-muted);
+      }
+
+      .rev-pop-textarea {
+         min-height: 80px;
+         resize: vertical;
+      }
+
+      .rev-pop-btn {
+         padding: 12px;
+         border-radius: 8px;
+         border: none;
+         cursor: pointer;
+         background: var(--rev-pop-accent);
+         color: #fff;
+         font-weight: 700;
+         font-size: 14px;
+         grid-column: 1 / -1;
+      }
+
+      /* Close button */
+      .rev-pop-close {
+         position: absolute;
+         top: 10px;
+         right: 12px;
+         border: none;
+         background: transparent;
+         font-size: 20px;
+         cursor: pointer;
+         color: var(--rev-pop-muted);
+      }
+
+      /* Sticky Icon */
+      .rev-pop-icon {
+         position: fixed;
+         left: 20px;
+         bottom: 40px;
+         background: #aaa5a5;
+         color: #fff;
+         font-weight: 700;
+         border-radius: 50%;
+         width: 60px;
+         height: 60px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         box-shadow: 0 4px 16px rgba(0, 0, 0, .25);
+         cursor: pointer;
+         z-index: 9997;
+         opacity: 0;
+         pointer-events: none;
+         transition: opacity .3s ease;
+         font-size: 22px;
+      }
+
+      .rev-pop-icon.rev-show {
+         opacity: 1;
+         pointer-events: auto;
+      }
+   </style>
+
+   <div class="rev-pop-backdrop" id="revBackdrop"></div>
+
+   <!-- Popup Form (This goes inside your HTML file) -->
+   <div class="rev-pop" id="revPopup">
+      <button class="rev-pop-close" id="revClose">&times;</button>
+      <h2>🎉 Limited Time Offer</h2>
+      <p>Book a <strong>free consultation</strong> for your business growth.</p>
+      <div class="rev-countdown" id="revCountdown">3h 23m 00s remaining</div>
+
+      <form id="revForm" class="rev-pop-form" novalidate method="POST" action="/popup-form">
+         <input class="rev-pop-input" type="text" name="name" placeholder="Full name" required>
+         <input class="rev-pop-input" type="email" name="email" placeholder="Work email" required>
+         <input class="rev-pop-input" type="tel" name="phone" placeholder="Phone (optional)">
+         <select class="rev-pop-select" name="service">
+            <option value="" selected>I'm interested in…</option>
+            <option>AI/ML/GenAI Solutions</option>
+            <option>App/Website Development</option>
+            <option>Custom Softwares & SAAS</option>
+            <option>AI Automation & CRM</option>
+         </select>
+         <textarea class="rev-pop-textarea full" name="message"
+            placeholder="Tell us about your business goals (optional)"></textarea>
+         <label class="full" style="display:flex;align-items:center;gap:6px;font-size:12px;color:var(--rev-pop-muted);">
+            <input type="checkbox" required> I agree to be contacted about my request.
+         </label>
+         <button class="rev-pop-btn" type="submit">Book Free Consultation</button>
+      </form>
+
+   </div>
+   <div class="rev-pop-icon" id="revIcon">🔥</div>
+
+   <!-- <script src="/assets/js/pop-email.js"></script> -->
+   <script>
+      (function () {
+         const popup = document.getElementById('revPopup');
+         const backdrop = document.getElementById('revBackdrop');
+         const closeBtn = document.getElementById('revClose');
+         const icon = document.getElementById('revIcon');
+         const countdownEl = document.getElementById('revCountdown');
+
+         // Countdown (3h 23m)
+         let timeLeft = (3 * 60 * 60 + 23 * 60);
+         function updateCountdown() {
+            let h = Math.floor(timeLeft / 3600);
+            let m = Math.floor((timeLeft % 3600) / 60);
+            let s = timeLeft % 60;
+            countdownEl.textContent = `${h}h ${m}m ${s}s remaining`;
+            if (timeLeft > 0) { timeLeft--; }
+         }
+         setInterval(updateCountdown, 1000);
+         updateCountdown();
+
+         function openPop() {
+            popup.classList.add('rev-open');
+            backdrop.classList.add('rev-open');
+            icon.classList.remove('rev-show');
+         }
+         function closePop() {
+            popup.classList.remove('rev-open');
+            backdrop.classList.remove('rev-open');
+            icon.classList.add('rev-show');
+         }
+
+         closeBtn.onclick = closePop;
+         backdrop.onclick = closePop;
+         icon.onclick = openPop;
+
+         // Auto open after delay
+         setTimeout(openPop, 9000);
+
+         // Simple form handler
+         document.getElementById('revForm').addEventListener('submit', e => {
+            e.preventDefault();
+            const formData = new FormData(e.target);
+            const data = {};
+            formData.forEach((value, key) => {
+               data[key] = value;
+            });
+
+            // Send form data to the backend using Fetch API
+            fetch('https://api.revoticai.com/popup-form', {
+               method: 'POST',
+               headers: {
+                  'Content-Type': 'application/json',
+               },
+               body: JSON.stringify(data),
+            })
+               .then(response => response.json())
+               .then(result => {
+                  if (result.ok) {
+                     // Optionally display a success message
+                  } else {
+                     console.error('There was an error submitting the form.');
+                  }
+                  closePop();
+               })
+               .catch(error => {
+                  console.error('Error submitting form:', error);
+                  alert('An error occurred. Please try again later.');
+               });
+         });
+      })();
+   </script>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/animate.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <style>
+      
+/* Header CSS HERE */
+
+.tp-header-area{
+    padding: 0 20px 0 20px !important;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.tp-header-area .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100% !important;
+    min-width: 100%;
+    
+}
+.tp-header-area .container .header-logo{
+    width: 18%;
+} 
+
+.tp-header-area .container .header-logo img{
+    width: 100%;
+    padding: 0 auto;
+
+    /* Writ code here I want to fit image at give full size of nav bar like 15%  */
+
+
+    
+}
+
+.tp-header-area .container .mid-nav-item{
+    width: 58%;
+}
+
+.tp-header-area .container li{
+    margin: 0 7px ;
+}
+.tp-header-area .container li a{
+    color: #2e2e2e;
+}
+
+.tp-header-area .container .cta-btn{
+    width: 24%;
+}
+
+
+
+
+    </style>
+  <!-- Font Awsome -->
+    <link rel="stylesheet"   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>   
+
+   </head>
+
+
+<body>
+
+    <header>
+      <div class="tp-header-area header-transparent mt-40">
+         <div class="container container-1230">
+            <div class="tp-header-box">
+               <div class="row align-items-center">
+                  <div class="col-lg-3 col-6 header-logo">
+                     <div class="tp-header-logo ">
+                        <a style="filter: invert(0);" href="/index.html"><img src="/assets/images/logo.webp" alt=""></a>
+                     </div>
+                  </div>
+                  <div class="col-lg-6  mid-nav-item d-lg-block">
+                     <div class="tp-header-menu text-center">
+                        <nav>
+                           <ul>
+                              <li class="smooth"><a href="/services/index.html">Services</a></li>
+                              <li class="smooth"><a href="/portfolio/index.html">Portfolio</a></li>
+                              <li class="smooth"><a href="/experts/index.html">Our Experts</a></li>
+                              <li class="smooth"><a href="/blogs/index.html">Blog</a></li>
+                              <li class="smooth"><a href="/contact/index.html">Contact</a></li>
+                              <li class="smooth"><a href="/about/index.html">About</a></li>
+      
+                           </ul>
+                        </nav>
+      
+                     </div>
+                  </div>
+                  <div class="col-lg-3 cta-btn col-6">
+                     <div class="tp-header-btn text-end">
+                        <a class="tp-btn-yellow d-inline-flex align-items-center" href="/contact/index.html" target="_blank">
+                           <i>
+      
+                              <svg width="16px" height="16px" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg"
+                                 fill="none">
+                                 <path stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"
+                                    d="M92.953 57.154c22.628-22.627 57.983-35.355 76.368-33.94 1.414 18.384-11.314 53.74-33.941 76.367-22.628 22.627-48.084 39.598-62.226 45.255L47.698 119.38c5.657-14.142 22.628-39.598 45.255-62.226Zm-5.657 48.084-39.598 39.598" />
+                                 <circle cx="128.309" cy="64.225" r="12" fill="#000000"
+                                    transform="rotate(45 128.309 64.225)" />
+                                 <path stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"
+                                    d="m115.581 119.38 1.569 17.256c.779 8.57-3.09 16.9-10.139 21.835l-16.886 11.82-1.414-32.527M73.154 76.953l-17.256-1.569a24 24 0 0 0-21.835 10.139l-11.82 16.886 32.527 1.414" />
+                              </svg>
+                           </i>
+                           <span>
+                              <span class="text-1">Boost Your Business</span>
+                              <span class="text-2">Book a Fee CALL</span>
+                           </span>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+    
+    </header>
+
+</body>
+
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Responsive Header</title>
+
+   <!-- Your existing CSS files -->
+   <link rel="stylesheet" href="/assets/css/style.css">
+   <link rel="stylesheet" href="/assets/css/header.css">
+   <link rel="stylesheet" href="/assets/css/animate.css">
+   <link rel="stylesheet" href="/assets/css/bootstrap.css">
+   <link rel="stylesheet" href="/assets/css/main.css">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+
+
+   <style>
+      /* Base Reset */
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+      }
+
+      body {
+         font-family: 'Inter', sans-serif;
+      }
+
+      header {
+         width: 100%;
+         background: #fff;
+         padding: 12px 20px;
+         z-index: 1000;
+         position: relative;
+      }
+
+      .header-wrapper {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+      }
+
+      .header-logo img {
+         max-height: 40px;
+      }
+
+      .menu-toggle {
+         font-size: 24px;
+         display: none;
+         cursor: pointer;
+      }
+
+      .cta-btn a {
+         background: #f8e71c;
+         padding: 10px 16px;
+         border-radius: 8px;
+         font-weight: 600;
+         font-size: 14px;
+         color: #000;
+         text-decoration: none;
+      }
+
+      /* Fullscreen Overlay Menu */
+      .mobile-menu {
+         position: fixed;
+         top: 0;
+         right: -100%;
+         width: 100%;
+         height: 100vh;
+         background: #fff;
+         z-index: 9999;
+         transition: right 0.4s ease-in-out;
+         display: flex;
+         flex-direction: column;
+         padding: 30px 25px;
+      }
+
+      .mobile-menu.active {
+         right: 0;
+      }
+
+      .mobile-menu .menu-header {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+      }
+
+      .mobile-menu .menu-header img {
+         max-height: 35px;
+      }
+
+      .close-menu {
+         font-size: 26px;
+         cursor: pointer;
+      }
+
+      .mobile-menu ul {
+         list-style: none;
+         margin-top: 40px;
+         padding: 0;
+      }
+
+      .mobile-menu ul li {
+         margin-bottom: 18px;
+      }
+
+      .mobile-menu ul li a {
+         text-decoration: none;
+         color: #000;
+         font-size: 18px;
+         font-weight: 500;
+      }
+
+      .mobile-menu .info {
+         margin-top: auto;
+         font-size: 14px;
+         color: #444;
+      }
+
+      .mobile-menu .info strong {
+         display: block;
+         margin-bottom: 10px;
+         font-weight: bold;
+         color: #000;
+      }
+
+      .social-icons {
+         margin-top: 15px;
+      }
+
+      .social-icons a {
+         font-size: 16px;
+         margin-right: 12px;
+         text-decoration: none;
+         color: #000;
+      }
+
+      .social-icons a:hover {
+         color: #f39c12;
+      }
+
+      /* Responsive Styles */
+      @media (max-width: 991px) {
+         .menu-toggle {
+            display: block;
+         }
+
+         .cta-btn {
+            display: none;
+         }
+      }
+
+      @media (min-width: 992px) {
+         .mobile-menu {
+            display: none;
+         }
+      }
+   </style>
+  <!-- Font Awsome -->
+    <link rel="stylesheet"   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>   
+
+   </head>
+
+
+<body>
+   <header>
+      <div class="header-wrapper">
+         <!-- Logo -->
+         <div class="header-logo">
+            <a href="/index.html"><img src="/assets/images/logo.webp" alt="Logo" /></a>
+         </div>
+
+         <!-- CTA button (hidden on mobile) -->
+         <div class="cta-btn">
+            <a href="/contact/index.html">Boost Your Business</a>
+         </div>
+
+         <!-- Menu toggle icon -->
+         <div class="menu-toggle" id="menuToggle">&#9776;</div>
+      </div>
+   </header>
+
+   <!-- Mobile Overlay Menu -->
+   <div class="mobile-menu" id="mobileMenu">
+      <div class="menu-header">
+         <a href="/index.html"><img src="/assets/images/logo.webp" alt="Logo" /></a>
+         <div class="close-menu" id="closeMenu">&times;</div>
+      </div>
+
+      <ul>
+         <li><a href="/services/index.html">Services</a></li>
+         <li><a href="/portfolio/index.html">Portfolio</a></li>
+         <li><a href="/experts/index.html">Our Experts</a></li>
+         <li><a href="/blogs/index.html">Blog</a></li>
+         <li><a href="/contact/index.html">Contact</a></li>
+         <li><a href="/about/index.html">About</a></li>
+      </ul>
+
+      <div class="info">
+         <strong>INFORMATION</strong>
+         <p>+92 3160513841</p>
+         <p>contact@revoticai.com</p>
+         <p>Spring Valley Bani Gala, Islamabad</p>
+
+         <strong>About Revotic AI</strong>
+         <p>
+            Revotic AI is a future-driven tech company specializing in intelligent automation, AI-powered platforms, and
+            modern digital solutions.
+            We help startups and enterprises scale fast through smart, data-driven technologies.
+         </p>
+         <a href="/about/index.html" style="color: #f39c12; font-weight: 600; text-decoration: none;">Learn More →</a>
+
+         <div class="social-icons">
+            <a href="#" aria-label="GitHub" target="_blank" rel="noopener">
+               <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="#" aria-label="LinkedIn" target="_blank" rel="noopener">
+               <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="#" aria-label="Twitter (X)" target="_blank" rel="noopener">
+               <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="#" aria-label="YouTube" target="_blank" rel="noopener">
+               <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="#" aria-label="Instagram" target="_blank" rel="noopener">
+               <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" aria-label="Facebook" target="_blank" rel="noopener">
+               <i class="fa-brands fa-facebook-f"></i>
+            </a>
+         </div>
+
+      </div>
+   </div>
+
+   <!-- Scripts -->
+   <script>
+      const menuToggle = document.getElementById('menuToggle');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const closeMenu = document.getElementById('closeMenu');
+
+      menuToggle.addEventListener('click', () => {
+         mobileMenu.classList.add('active');
+      });
+
+      closeMenu.addEventListener('click', () => {
+         mobileMenu.classList.remove('active');
+      });
+   </script>
+</body>
+
+</html>

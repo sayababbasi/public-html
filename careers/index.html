@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join Us Form</title>
+    <link rel="stylesheet" href="/assets/css/JoinUsForm.scss" />
+    <link rel="stylesheet" href="/assets/css/career.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap.css">
+
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+    <!-- Firebase SDK -->
+    <script type="module">
+        // Import Firebase dependencies
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js";
+        import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js";
+
+        // Your Firebase config
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyAVm0XHH5hexApphEAQvI29OBAkhx1Glwk",
+            authDomain: "revoticai.firebaseapp.com",
+            projectId: "revoticai",
+            storageBucket: "revoticai.firebasestorage.app",
+            messagingSenderId: "375767287511",
+            appId: "1:375767287511:web:9e7a19ad17f37cb4759292",
+            measurementId: "G-FNL76JMYYP",
+        };
+        const app = initializeApp(firebaseConfig);
+        window.db = getFirestore(app);
+        window.addDoc = addDoc;
+        window.collection = collection;
+    </script>
+
+    <style>
+        /* minimal inline fallback */
+        .hidden {
+            display: none;
+        }
+    </style>
+  <!-- Font Awsome -->
+    <link rel="stylesheet"   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>   
+
+   </head>
+
+
+<body>
+    <div class="join-us-container">
+        <!-- Step 1 -->
+        <div id="step1" class="career-container">
+            <div class="openings-section">
+                <h1>Current Openings</h1>
+                <p>Explore our latest internship and job opportunities below.</p>
+                <h2>Open Positions</h2>
+                <div class="openings-container">
+                    <div class="openings-grid" id="openings-list"></div>
+                </div>
+            </div>
+
+            <div class="type-selector career-left-section">
+                <h2>Apply Now</h2>
+                <p>Choose your desired application type:</p>
+                <div class="type-buttons">
+                    <button class="apply-btn" onclick="selectType('Internship')">Apply for Internship</button>
+                    <button class="apply-btn" onclick="selectType('Job')">Apply for Job</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div id="step2" class="form-section hidden">
+            <button class="form-close" onclick="goBack()">×</button>
+            <h2 id="form-title"></h2>
+            <form id="application-form" class="application-form"></form>
+            <p class="status-message" id="status"></p>
+        </div>
+    </div>
+
+    <script type="module">
+        import { addDoc, collection } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js";
+
+        // Initialize EmailJS
+        emailjs.init("pT4SCy8mKgQbIS09Y");
+
+        const openings = [
+            { id: 1, type: "Internship", title: "AI/ML & Generative AI Intern", technology: "AI, ML, GenAI, RAG, Agentic AI", deadline: "2025-09-15" },
+            { id: 2, type: "Internship", title: "Full Stack Developer Intern", technology: "React.js, Node.js, Express.js, MongoDB, Flask, FastAPI", deadline: "2025-09-15" },
+            { id: 3, type: "Internship", title: "Frontend Developer Intern", technology: "HTML, CSS, JavaScript, React.js, Next.js", deadline: "2025-09-15" },
+            { id: 4, type: "Internship", title: "Backend Developer Intern", technology: "Node.js, Express.js, Flask, FastAPI, MongoDB", deadline: "2025-09-15" },
+            { id: 5, type: "Internship", title: "Game Developer Intern", technology: "Unreal Engine, C++, Blueprints", deadline: "2025-09-15" }
+        ];
+
+        const openingsList = document.getElementById("openings-list");
+        openings.forEach(job => {
+            const card = document.createElement("div");
+            card.className = "opening-card";
+            card.innerHTML = `
+        <h3>${job.title}</h3>
+        <p><strong>Type:</strong> ${job.type}</p>
+        <p><strong>Technology:</strong> ${job.technology}</p>
+        <p><strong>Deadline:</strong> ${job.deadline}</p>
+      `;
+            openingsList.appendChild(card);
+        });
+
+        let currentType = "";
+        const formTitle = document.getElementById("form-title");
+        const formEl = document.getElementById("application-form");
+        const statusEl = document.getElementById("status");
+
+        function selectType(type) {
+            currentType = type;
+            document.getElementById("step1").classList.add("hidden");
+            document.getElementById("step2").classList.remove("hidden");
+            formTitle.innerText = `${type} Application Form`;
+
+            formEl.innerHTML = ""; // clear
+            if (type === "Internship") {
+                formEl.innerHTML = `
+          <!-- Internship fields -->
+          <div class="form-row">
+            <div class="form-group"><label>Name</label><input type="text" name="name" required></div>
+            <div class="form-group"><label>Last Name</label><input type="text" name="last_name" required></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>Email</label><input type="email" name="email" required></div>
+            <div class="form-group"><label>Contact</label><input type="tel" name="contact" placeholder="Must Start with Country Code: +1"></div>
+          </div>
+          <div class="form-group full-width"><label>Comment</label><textarea name="comment"></textarea></div>
+          <div class="form-group full-width"><label>Upload Resume</label><input type="file" name="resume"></div>
+          <button class="submit-btn" type="submit">Submit Application</button>
+        `;
+            } else {
+                formEl.innerHTML = `
+          <!-- Job fields -->
+          <div class="form-row">
+            <div class="form-group"><label>First Name</label><input type="text" name="first_name" required></div>
+            <div class="form-group"><label>Last Name</label><input type="text" name="last_name" required></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>Email</label><input type="email" name="email" required></div>
+            <div class="form-group"><label>Phone</label><input type="tel" name="contact" placeholder="(000) 000-0000" required></div>
+          </div>
+          <div class="form-group full-width"><label>Cover Letter</label><textarea name="cover_letter"></textarea></div>
+          <div class="form-group full-width"><label>Upload Resume</label><input type="file" name="resume"></div>
+          <button class="submit-btn" type="submit">Submit Application</button>
+        `;
+            }
+        }
+
+        function goBack() {
+            document.getElementById("step2").classList.add("hidden");
+            document.getElementById("step1").classList.remove("hidden");
+        }
+
+        // ESC to close
+        window.addEventListener("keydown", e => { if (e.key === "Escape") goBack(); });
+
+        // Submit handler
+        document.addEventListener("submit", async e => {
+            if (e.target.id === "application-form") {
+                e.preventDefault();
+                statusEl.innerText = "Sending...";
+
+                const formData = Object.fromEntries(new FormData(e.target).entries());
+                try {
+                    const fullName = currentType === "Internship"
+                        ? `${formData.name || ""} ${formData.last_name || ""}`.trim()
+                        : `${formData.first_name || ""} ${formData.last_name || ""}`.trim();
+
+                    const messageContent = currentType === "Internship" ? formData.comment : formData.cover_letter;
+                    const templateId = currentType === "Internship" ? "template_12n50tn" : "template_0u73edp";
+                    const roleTypeLabel = currentType === "Internship"
+                        ? `${formData.internship_type || "Not specified"} Internship`
+                        : `${formData.job_type || "Not specified"} Job`;
+
+                    await emailjs.send("service_24hekgn", templateId, {
+                        name: fullName || "Applicant",
+                        email: formData.email || "No email provided",
+                        technology: formData.technology || "Not specified",
+                        internship_type: currentType === "Internship" ? roleTypeLabel : "",
+                        job_type: roleTypeLabel,
+                        roleTypeLabel: roleTypeLabel,
+                        message: messageContent || "No additional comments provided",
+                        website_link: "https://revoticai.com",
+                    });
+
+                    const dataToStore = { ...formData };
+                    delete dataToStore.resume;
+                    if (currentType === "Job") delete dataToStore.education_docs;
+
+                    await addDoc(collection(db, "join_requests"), {
+                        ...dataToStore,
+                        type: currentType || "General",
+                        submitted_at: new Date().toISOString(),
+                    });
+
+                    statusEl.innerText = "Success! Your application has been submitted.";
+                    e.target.reset();
+                } catch (err) {
+                    console.error("Error submitting form:", err);
+                    statusEl.innerText = "Error submitting the form. Please try again later.";
+                }
+            }
+        });
+
+        // 🔧 ADDED: expose functions globally so inline onclick works
+        window.selectType = selectType;   // <-- makes the buttons work
+        window.goBack = goBack;
+
+        // (Optional) 🔧 ADDED: click-to-pause/resume the floating openings
+        // Keeps your existing CSS/logic intact; remove this block if you don't want it.
+        const grid = document.querySelector(".openings-grid");
+        let isPaused = false;
+        document.addEventListener("click", (e) => {
+            const card = e.target.closest(".opening-card");
+            if (card && grid) {
+                isPaused = !isPaused;
+                grid.style.animationPlayState = isPaused ? "paused" : "running";
+            }
+        });
+    </script>
+</body>
+
+</html>

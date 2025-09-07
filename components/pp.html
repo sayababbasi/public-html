@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f3f6fb;
+    }
+
+    /* Overlay */
+    .overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.65);
+      z-index: 9999;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    /* Popup Box */
+    .popup {
+      background: #ffffff;
+      width: 90%;
+      max-width: 800px;
+      max-height: 85vh;
+      overflow-y: auto;
+      border-radius: 18px;
+      padding: 28px 34px;
+      box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.25);
+      animation: fadeInUp 0.4s ease-out;
+      border-top: 6px solid #007BFF;
+    }
+
+    .popup h1,
+    .popup h2,
+    .popup h3,
+    .popup h4 {
+      margin-top: 1rem;
+      color: #222;
+    }
+
+    .popup p,
+    .popup li {
+      color: #444;
+      line-height: 1.6;
+    }
+
+    .popup ul {
+      margin-left: 20px;
+    }
+
+    /* Buttons */
+    .btn-row {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 20px;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      border-radius: 8px;
+      border: none;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn-accept {
+      background: #007BFF;
+      color: #fff;
+    }
+
+    .btn-accept:hover {
+      background: #0056b3;
+    }
+
+    .btn-close {
+      background: #e4e6eb;
+      color: #333;
+    }
+
+    .btn-close:hover {
+      background: #d0d3d8;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  </style>
+  <!-- Font Awsome -->
+    <link rel="stylesheet"   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>   
+
+   </head>
+
+
+<body>
+
+  <!-- Overlay + Popup -->
+  <div class="overlay" id="privacyOverlay">
+    <div class="popup">
+      <!-- Injected Privacy Policy Content -->
+      <h1>Privacy Policy</h1>
+      <p><em>Last updated: August 24, 2025</em></p>
+      <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your
+        information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
+      <p>We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection
+        and use of information in accordance with this Privacy Policy. </a>.</p>
+
+      <!-- Your full Privacy Policy content continues here (I included the structure you pasted) -->
+      <!-- You can paste the rest of your <h2>, <h3>, <p>, <ul> etc. content inside this .popup -->
+
+      <div class="btn-row">
+        <button class="btn btn-close" onclick="closePopup()">Close</button>
+        <button class="btn btn-accept" onclick="acceptPrivacy()">Accept Policy</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Show popup on startup if not accepted
+    window.onload = function () {
+      if (!localStorage.getItem("privacyAccepted")) {
+        document.getElementById("privacyOverlay").style.display = "flex";
+      }
+    };
+
+    function closePopup() {
+      document.getElementById("privacyOverlay").style.display = "none";
+    }
+
+    function acceptPrivacy() {
+      localStorage.setItem("privacyAccepted", "true");
+      closePopup();
+    }
+  </script>
+
+</body>
+
+</html>

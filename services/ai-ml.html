@@ -1,0 +1,169 @@
+<section id="ai-ml" style="scroll-margin-top:80px;">
+  <style>
+    /* Dark theme variables (copied from Game Dev) */
+    :root {
+      --accent: #7c5cff;
+      --accent2: #00e0ff;
+      --bg-dark: #0b0f14;
+      --card-bg: rgba(15, 22, 32, 0.85);
+      --text-light: #e6edf3;
+      --muted: #9aa4b2;
+    }
+
+    #ai-ml {
+      position: relative;
+      background: radial-gradient(circle at center, #111827 0%, var(--bg-dark) 100%);
+      padding: 100px 20px;
+      overflow: hidden;
+      color: var(--text-light);
+    }
+
+    /* same particles, content, cards, hover, progress as before */
+    #ai-ml .particles {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: 0;
+    }
+
+    #ai-ml .particles span {
+      position: absolute;
+      display: block;
+      width: 6px; height: 6px;
+      background: var(--accent2);
+      border-radius: 50%;
+      animation: float 6s infinite ease-in-out;
+      opacity: 0.7;
+    }
+
+    #ai-ml .content {
+      position: relative;
+      z-index: 2;
+      max-width: 1200px;
+      margin: auto;
+      text-align: center;
+    }
+
+    #ai-ml h2 {
+      font-size: 3rem;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: glow 3s infinite alternate;
+      margin-bottom: 15px;
+    }
+
+    #ai-ml p {
+      max-width: 700px;
+      margin: auto;
+      color: var(--muted);
+      font-size: 1.1rem;
+      margin-bottom: 50px;
+    }
+
+    #ai-ml .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    #ai-ml .card {
+      background: var(--card-bg);
+      padding: 25px;
+      border-radius: 16px;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      border: 1px solid rgba(255,255,255,0.08);
+      animation: fadeUp 0.8s ease both;
+    }
+
+    #ai-ml .card:hover {
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 12px 25px rgba(124, 92, 255, 0.3);
+    }
+
+    #ai-ml .icon {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: var(--accent2);
+    }
+
+    #ai-ml .progress-bar {
+      background: rgba(255,255,255,0.05);
+      height: 8px;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-top: 15px;
+    }
+
+    #ai-ml .progress {
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      animation: progressAnim 3s infinite alternate ease-in-out;
+    }
+
+    @media (max-width: 600px) {
+      #ai-ml h2 { font-size: 2.2rem; }
+    }
+  </style>
+
+  <div class="particles">
+    <span style="left:10%; animation-delay:0s;"></span>
+    <span style="left:30%; animation-delay:1s;"></span>
+    <span style="left:50%; animation-delay:2s;"></span>
+    <span style="left:70%; animation-delay:3s;"></span>
+    <span style="left:90%; animation-delay:4s;"></span>
+  </div>
+
+  <div class="content">
+    <h2>AI & Machine Learning at RevoticAI</h2>
+    <p>We create AI-driven solutions that empower businesses to automate processes, predict trends, and make data-driven decisions with precision.</p>
+
+    <div class="grid">
+      <div class="card">
+        <div class="icon">🧠</div>
+        <h3>Natural Language Processing</h3>
+        <p>Building chatbots, language models, and text analysis tools for smarter communication.</p>
+        <div class="progress-bar"><div class="progress"></div></div>
+      </div>
+
+      <div class="card">
+        <div class="icon">📊</div>
+        <h3>Predictive Analytics</h3>
+        <p>Forecasting outcomes with machine learning models that adapt to new data.</p>
+        <div class="progress-bar"><div class="progress"></div></div>
+      </div>
+
+      <div class="card">
+        <div class="icon">🤖</div>
+        <h3>Automation Systems</h3>
+        <p>Streamlining workflows with intelligent automation powered by AI algorithms.</p>
+        <div class="progress-bar"><div class="progress"></div></div>
+      </div>
+
+      <div class="card">
+        <div class="icon">🖼️</div>
+        <h3>Computer Vision</h3>
+        <p>Image and video analysis for recognition, tracking, and real-time processing.</p>
+        <div class="progress-bar"><div class="progress"></div></div>
+      </div>
+
+      <div class="card">
+        <div class="icon">🔍</div>
+        <h3>Data Mining</h3>
+        <p>Finding patterns and insights in massive datasets for better decision-making.</p>
+        <div class="progress-bar"><div class="progress"></div></div>
+      </div>
+
+      <div class="card">
+        <div class="icon">⚙️</div>
+        <h3>Model Deployment</h3>
+        <p>Integrating AI models into applications for real-time, scalable use.</p>
+        <div class="progress-bar"><div class="progress"></div></div>
+      </div>
+    </div>
+  </div>
+</section>

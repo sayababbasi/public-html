@@ -1,0 +1,214 @@
+.process__section{
+    background: var(--tp-common-black);
+    min-width: 100% !important;
+}
+
+
+.section-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* space between line and text */
+  margin-bottom: 20px;
+}
+
+.section-divider::before,
+.section-divider::after {
+  content: "";
+  flex: 0 0 40px; /* short lines, adjust if needed */
+  height: 1px;
+  background-color: #fff;
+}
+
+.section-divider__text {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #fff;
+  white-space: nowrap;
+}
+
+
+.section-divider::before {
+  left: 0;
+}
+
+.section-divider::after {
+  right: 0;
+}
+
+
+.work-process-card {
+
+    background: var(--tp-common-black);
+    overflow: hidden;
+    transition: all 0.4s;
+    border: 1px solid var(--cusborder, #333);
+    /* default fallback */
+    border-radius: 10px;
+    padding: 30px 30px;
+    position: relative;
+    max-width: 400px;
+    max-height: 400px;
+}
+/* Footer Top Section */
+footer {
+  background-color: #0b0b0b;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  padding: 0;
+}
+
+.footer__top {
+  padding: 120px 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer__top .fl {
+  font-size: 5rem; /* Large title */
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 60px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.footer__top .get__content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.footer__top .get__content a {
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer__top .get__content a:hover {
+  color: #ff6b00; /* Highlight color */
+}
+
+/* Social buttons */
+.get__rightcontetn .social__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.get__rightcontetn .social__footer i {
+  margin-left: 10px;
+}
+
+.get__rightcontetn .social__footer:hover {
+  background-color: #ff6b00;
+  border-color: #ff6b00;
+  color: #0b0b0b;
+}
+
+.get__rightcontetn .social__footer:hover i {
+  color: #0b0b0b;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .footer__top .fl {
+    font-size: 3rem;
+  }
+  .footer__top .get__content p {
+    font-size: 16px;
+  }
+  .footer__top .get__content a {
+    font-size: 18px;
+  }
+  .get__rightcontetn .social__footer {
+    font-size: 16px;
+    padding: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer__top .fl {
+    font-size: 2.2rem;
+  }
+  .footer__top .get__content p {
+    font-size: 14px;
+  }
+  .footer__top .get__content a {
+    font-size: 16px;
+  }
+  .get__rightcontetn .social__footer {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+
+/* List items inside the card */
+.work-process-card ul li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #999;
+    font-size: 18px;
+    padding-left: 20px;
+}
+
+.work-process-card ul li::before {
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--base, #c7c7c7);
+    /* fallback white */
+    content: "";
+    left: 0;
+}
+
+.work-process-card ul li:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.work-process-card::before {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: 0;
+    right: 0;
+    content: "";
+    background: #121212;
+    border-radius: 100px 20px 0 0;
+    transition: all 0.4s;
+}
+
+.work-process-card:hover {
+    border-color: var(--hover, #fff);
+}
+
+.work-process-card:hover::before {
+    background: var(--base, #fff);
+}
+
+/* Responsive */
+@media (max-width: 1600px) {
+    .work-process-card {
+        padding: 20px 18px;
+    }
+
+    .work-process-card ul li {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+}

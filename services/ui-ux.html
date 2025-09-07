@@ -1,0 +1,130 @@
+<!-- ================= UI/UX SECTION ================= -->
+<section id="ui-ux" style="position:relative; overflow:hidden; background:#0b0f14; color:#e6edf3; padding:80px 20px;">
+  <!-- Particles Background -->
+  <div id="particles-uiux" style="position:absolute; top:0; left:0; width:100%; height:100%; z-index:0;"></div>
+
+  <div style="max-width:1200px; margin:auto; position:relative; z-index:1; text-align:center;">
+    <h2 style="
+      font-size:3rem; 
+      margin-bottom:50px; 
+      background:linear-gradient(90deg, var(--accent), var(--accent2)); 
+      -webkit-background-clip:text; 
+      color:transparent; 
+      animation:glow 3s infinite alternate;
+    ">
+      UI / UX Design
+    </h2>
+    <p style="color: var(--muted); font-size: 1.1rem; max-width:700px; margin:auto;">
+      We create intuitive, visually stunning, and user-friendly designs that enhance user engagement and experience.
+    </p>
+
+    <!-- Card Grid -->
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:25px; margin-top:50px;">
+      <div class="card">
+        <h3>Wireframing</h3>
+        <p>Low-fidelity structures for clear design communication.</p>
+      </div>
+      <div class="card">
+        <h3>Prototyping</h3>
+        <p>Interactive previews before final development.</p>
+      </div>
+      <div class="card">
+        <h3>User Research</h3>
+        <p>Deep insights into user behavior and expectations.</p>
+      </div>
+      <div class="card">
+        <h3>Visual Design</h3>
+        <p>Pixel-perfect, modern, and appealing UI aesthetics.</p>
+      </div>
+      <div class="card">
+        <h3>UX Auditing</h3>
+        <p>Evaluating usability and identifying pain points.</p>
+      </div>
+      <div class="card">
+        <h3>Brand Identity</h3>
+        <p>Consistency across digital and print experiences.</p>
+      </div>
+      <div class="card">
+        <h3>Responsive Design</h3>
+        <p>Optimized visuals for every screen size.</p>
+      </div>
+      <div class="card">
+        <h3>Design Systems</h3>
+        <p>Reusable components for streamlined development.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+:root {
+  --accent: #7c5cff;
+  --accent2: #00e0ff;
+  --bg-dark: #0b0f14;
+  --card-bg: rgba(15, 22, 32, 0.85);
+  --text-light: #e6edf3;
+  --muted: #9aa4b2;
+  --radius: 16px;
+  --border: rgba(124,92,255,0.6);
+}
+
+/* Glow animation for title */
+@keyframes glow {
+  0% { text-shadow: 0 0 8px var(--accent); }
+  100% { text-shadow: 0 0 18px var(--accent2); }
+}
+
+/* UI/UX Cards */
+#ui-ux .card {
+  background: var(--card-bg);
+  padding: 25px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: 0 0 15px rgba(124,92,255,0.3);
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+  animation: cardGlow 3s infinite alternate;
+}
+
+#ui-ux .card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 0 25px rgba(124,92,255,0.6), 0 12px 25px rgba(124,92,255,0.4);
+  border-color: rgba(124,92,255,0.9);
+}
+
+#ui-ux .card h3 {
+  color: var(--accent2);
+  margin-bottom: 10px;
+}
+
+#ui-ux .card p {
+  color: var(--muted);
+}
+
+/* Card Glow Keyframes */
+@keyframes cardGlow {
+  0% { box-shadow: 0 0 10px rgba(124,92,255,0.2); }
+  50% { box-shadow: 0 0 20px rgba(124,92,255,0.5); }
+  100% { box-shadow: 0 0 10px rgba(124,92,255,0.2); }
+}
+</style>
+
+<!-- Particles JS -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+<script>
+particlesJS("particles-uiux", {
+  particles: {
+    number: { value: 80, density: { enable: true, value_area: 800 } },
+    color: { value: "#ffffff" },
+    shape: { type: "circle" },
+    opacity: { value: 0.5 },
+    size: { value: 3 },
+    line_linked: { enable: true, distance: 150, color: "#ffffff", opacity: 0.4, width: 1 },
+    move: { enable: true, speed: 2 }
+  },
+  interactivity: {
+    detect_on: "canvas",
+    events: { onhover: { enable: true, mode: "repulse" }, onclick: { enable: true, mode: "push" } },
+    modes: { repulse: { distance: 100 }, push: { particles_nb: 4 } }
+  }
+});
+</script>

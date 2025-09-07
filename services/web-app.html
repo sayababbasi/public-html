@@ -1,0 +1,155 @@
+<!-- ================= WEB APP SECTION ================= -->
+<section id="webapp" style="position:relative; overflow:hidden; background:#0b0f14; color:#e6edf3; padding:80px 20px;">
+  <!-- Advanced Particles Background -->
+  <canvas id="particles-webapp" style="position:absolute; top:0; left:0; width:100%; height:100%; z-index:0;"></canvas>
+
+  <div style="max-width:1200px; margin:auto; position:relative; z-index:1; text-align:center;">
+    <h2 style="
+      font-size:3rem;
+      margin-bottom:50px;
+      background:linear-gradient(90deg, var(--accent), var(--accent2));
+      -webkit-background-clip:text;
+      color:transparent;
+      animation:glow 3s infinite alternate;
+    ">
+      Web Applications
+    </h2>
+    <p style="color: var(--muted); font-size: 1.1rem; max-width:700px; margin:auto;">
+      We build responsive, scalable, and interactive web applications using cutting-edge AI and development tools.
+    </p>
+
+    <!-- Card Grid -->
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:25px; margin-top:50px;">
+      <div class="card"><h3>Progressive Web Apps</h3><p>Fast, reliable apps that feel native on any device.</p></div>
+      <div class="card"><h3>Real-time Dashboards</h3><p>Dynamic dashboards with live data updates.</p></div>
+      <div class="card"><h3>AI Integration</h3><p>Embedding smart AI functionalities seamlessly.</p></div>
+      <div class="card"><h3>API Ecosystem</h3><p>Powerful RESTful and GraphQL APIs for your apps.</p></div>
+      <div class="card"><h3>Responsive Design</h3><p>Perfect display and interactions on all screen sizes.</p></div>
+      <div class="card"><h3>Interactive UI</h3><p>Neon-glow buttons, hover effects, and smooth transitions.</p></div>
+      <div class="card"><h3>Performance Optimized</h3><p>Fast load times, lazy loading, and efficient assets.</p></div>
+      <div class="card"><h3>Security & Auth</h3><p>Modern security protocols and authentication systems.</p></div>
+    </div>
+  </div>
+</section>
+
+<style>
+/* Reuse global variables */
+:root {
+  --accent: #7c5cff;
+  --accent2: #00e0ff;
+  --bg-dark: #0b0f14;
+  --card-bg: rgba(15, 22, 32, 0.85);
+  --text-light: #e6edf3;
+  --muted: #9aa4b2;
+  --radius: 16px;
+  --border: rgba(124,92,255,0.6);
+}
+
+/* Title glow */
+@keyframes glow {
+  0% { text-shadow: 0 0 8px var(--accent); }
+  100% { text-shadow: 0 0 18px var(--accent2); }
+}
+
+/* Cards */
+#webapp .card {
+  background: var(--card-bg);
+  padding: 25px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: 0 0 15px rgba(124,92,255,0.3);
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+  animation: cardGlow 3s infinite alternate;
+}
+
+#webapp .card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 0 25px rgba(124,92,255,0.6), 0 12px 25px rgba(124,92,255,0.4);
+  border-color: rgba(124,92,255,0.9);
+}
+
+#webapp .card h3 {
+  color: var(--accent2);
+  margin-bottom: 10px;
+}
+
+#webapp .card p {
+  color: var(--muted);
+}
+
+@keyframes cardGlow {
+  0% { box-shadow: 0 0 10px rgba(124,92,255,0.2); }
+  50% { box-shadow: 0 0 20px rgba(124,92,255,0.5); }
+  100% { box-shadow: 0 0 10px rgba(124,92,255,0.2); }
+}
+</style>
+
+<script>
+// Advanced interactive particles
+const canvas = document.getElementById("particles-webapp");
+const ctx = canvas.getContext("2d");
+canvas.width = window.innerWidth;
+canvas.height = document.querySelector("#webapp").offsetHeight;
+
+let particles = [];
+const particleCount = 120;
+for(let i=0;i<particleCount;i++){
+  particles.push({
+    x: Math.random()*canvas.width,
+    y: Math.random()*canvas.height,
+    r: Math.random()*3+1,
+    dx: (Math.random()-0.5)*1.5,
+    dy: (Math.random()-0.5)*1.5
+  });
+}
+
+// Mouse interaction
+const mouse = { x:null, y:null };
+canvas.addEventListener("mousemove", (e)=>{ mouse.x = e.x; mouse.y = e.y; });
+canvas.addEventListener("mouseleave", ()=>{ mouse.x = null; mouse.y = null; });
+
+function drawParticles(){
+  ctx.clearRect(0,0,canvas.width,canvas.height);
+  // Draw particles
+  particles.forEach(p=>{
+    ctx.beginPath();
+    ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+    ctx.fillStyle = "#ffffff";
+    ctx.fill();
+
+    // Mouse repulse effect
+    if(mouse.x && mouse.y){
+      let dx = p.x - mouse.x;
+      let dy = p.y - mouse.y;
+      let dist = Math.sqrt(dx*dx + dy*dy);
+      if(dist < 100){
+        p.x += dx/dist * 2;
+        p.y += dy/dist * 2;
+      }
+    }
+
+    // Line connections
+    particles.forEach(p2=>{
+      let dx = p.x - p2.x;
+      let dy = p.y - p2.y;
+      let dist = Math.sqrt(dx*dx + dy*dy);
+      if(dist < 80){
+        ctx.beginPath();
+        ctx.moveTo(p.x,p.y);
+        ctx.lineTo(p2.x,p2.y);
+        ctx.strokeStyle = `rgba(124,92,255,${1 - dist/80})`;
+        ctx.lineWidth = 1;
+        ctx.stroke();
+      }
+    });
+
+    p.x += p.dx;
+    p.y += p.dy;
+    if(p.x < 0 || p.x > canvas.width) p.dx*=-1;
+    if(p.y < 0 || p.y > canvas.height) p.dy*=-1;
+  });
+
+  requestAnimationFrame(drawParticles);
+}
+drawParticles();
+</script>
